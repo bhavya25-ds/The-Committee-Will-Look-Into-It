@@ -33,3 +33,31 @@ def set_style():
         "grid.alpha":            0.6
     })
 
+
+
+
+# ---------------------------------------
+# DATA INPUT
+# ---------------------------------------
+
+def load_data(path, encoding="utf-8", sheet=0, **kwargs):
+    ext = str(path).split(".")[-1].lower()
+    if ext in ("xlsx", "xls"):
+        return pd.read_excel(path, sheet_name=sheet, **kwargs)
+    try:
+        return pd.read_csv(path, encoding=encoding, **kwargs)
+    except UnicodeDecodeError:
+        return pd.read_csv(path, encoding="latin1", **kwargs)
+
+
+def save_clean(df, path):
+    df.to_csv(path, index= False)
+    print(f"Saved | shape- {df.shape}")
+
+
+
+
+# ---------------------------------------
+# EDA
+# ---------------------------------------
+
