@@ -61,3 +61,17 @@ def save_clean(df, path):
 # EDA
 # ---------------------------------------
 
+def eda(df, name="DataFrame"):
+    print(f"  {name}")
+    print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols")
+    print(f"\nDtypes:\n{df.dtypes.to_string()}")
+    print(f"\nNull counts:\n{df.isnull().sum().to_string()}")
+    print(f"\nNull %:\n{(df.isnull().mean() * 100).round(2).to_string()}")
+    print(f"\nSample:\n{df.head(3).to_string()}")
+
+
+
+
+# 
+# 
+# 
