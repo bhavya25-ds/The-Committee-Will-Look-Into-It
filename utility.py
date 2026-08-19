@@ -72,6 +72,66 @@ def eda(df, name="DataFrame"):
 
 
 
-# 
-# 
-# 
+# ---------------------------------------
+# DATA CLEANING
+# ---------------------------------------
+
+def parse_dates(df, col, fmt="mixed"):
+    df[col]= pd.to_datetime(df[col], format= fmt, dayfirst=True, errors= "coerce")
+    df["year"]    = df[col].dt.year
+    df["month"]   = df[col].dt.month
+    df["quarter"] = df[col].dt.quarter
+    return df
+
+
+
+def clean_state_names(df, col):
+    replacements = {
+            "ANDAMAN & NICOBAR ISLANDS": "Andaman & Nicobar Islands",
+            "JAMMU & KASHMIR":           "Jammu & Kashmir",
+            "D & N HAVELI":              "Dadra & Nagar Haveli",
+            "A & N ISLANDS":             "Andaman & Nicobar Islands",
+            "D&NH AND DD":               "Dadra & Nagar Haveli and Daman & Diu",
+        }
+    df[col] = (
+            df[col]
+            .str.strip()
+            .str.title()
+            .replace(replacements)
+    )
+    return df
+
+
+def fill_numeric_nulls(df, cols, fill_value=0):
+    for col in cols:
+        if col in df.columns:
+            df[col]= df[col].fillna(fill_value)
+    return df
+
+
+def drop_totals(df, col, keywords= ("total", "all india", "india total")):
+    mask= df[col].str.lower().str.strip().isin([k.lower() for k in keywords])
+    dropped= mask.sum()
+    df= df[~mask].reset_index(drop=True)
+    print(f"Dropped {dropped} aggregate rows from '{col}'")
+    return df
+
+
+def clean_amount(series):
+    "convert indian currency strings like '1,00,00,000' or '₹10 cr to plain intergers" 
+    return(
+        series.astype(str)
+        .str.replace()
+        .str.replace(r"[₹,\s]", "", regex=True)
+        .str.replace(r"[Cc][Rr]", "0000000", regex=True)
+        .str.replace(r"[Ll][Aa][Kk][Hh]", "00000", regex=True)
+        .pipe(pd.to_numeric, errors="coerce")         
+    )
+
+
+
+
+# ---------------------------------------
+# GRAPHS PLOTTING
+# ---------------------------------------
+
