@@ -129,6 +129,18 @@ def clean_amount(series):
     )
 
 
+def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
+
+    id_vars = [id_cols] if isinstance(id_cols, str) else id_cols
+    
+    long_df = df.melt(
+        id_vars=id_vars,
+        var_name=var_name,
+        value_name=value_name
+    )
+    return long_df
+
+
 
 
 # ---------------------------------------
