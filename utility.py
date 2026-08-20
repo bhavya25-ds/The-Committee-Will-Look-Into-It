@@ -98,8 +98,8 @@ def clean_state_names(df, col):
     df[col] = (
             df[col]
             .str.strip()
-            .str.title()
             .replace(replacements)
+            .str.title()
     )
     return df
 
