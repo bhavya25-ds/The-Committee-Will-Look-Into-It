@@ -123,7 +123,6 @@ def clean_amount(series):
     "convert indian currency strings like '1,00,00,000' or '₹10 cr to plain intergers" 
     return(
         series.astype(str)
-        .str.replace()
         .str.replace(r"[₹,\s]", "", regex=True)
         .str.replace(r"[Cc][Rr]", "0000000", regex=True)
         .str.replace(r"[Ll][Aa][Kk][Hh]", "00000", regex=True)
