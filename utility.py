@@ -161,7 +161,7 @@ def label_bars(ax, fmt= "{:.0f}", pad=2, fontsize=10, color= "#333333"):
         if pd.notna(h) and h != 0:
             ax.annotate(
                 fmt.format(h),
-                xy= (p.get_x() + p.get_wight / 2, h),
+                xy= (p.get_x() + p.get_width / 2, h),
                 xytext=(0, pad),
                 textcoords="offset points",
                 ha="center",
