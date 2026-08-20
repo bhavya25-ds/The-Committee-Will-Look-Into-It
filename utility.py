@@ -8,6 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import seaborn as sns
+import sqlite3
+
 
 
 # ---------------------------------------
@@ -130,7 +132,6 @@ def clean_amount(series):
 
 
 def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
-
     id_vars = [id_cols] if isinstance(id_cols, str) else id_cols
     
     long_df = df.melt(
@@ -145,5 +146,78 @@ def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
 
 # ---------------------------------------
 # GRAPHS PLOTTING
+# ---------------------------------------
+
+def save_fig(fig, folder, filename, dpi=175):
+    os.makedirs(folder, exist_ok=True)
+    path= os.path.join(folder,filename)
+    fig.savefig(path, bbox_inches= "tight", dpi= dpi, facecolor= "#f9f6f1")
+    print(f"Chart saved- {path}")
+    return path
+
+
+def label_bars(ax, fmt= "{:.0f}", pad=2, fontsize=10, color= "#333333"):
+    for p in ax.patches:
+        h= p.get_height()
+        if pd.notna(h) and h != 0:
+            ax.annotate(
+                fmt.format(h),
+                xy= (p.get_x() + p.get_wight / 2, h),
+                xytext=(0, pad),
+                textcoords="offset points",
+                ha="center",
+                va="bottom",
+                fontsize=fontsize,
+                color=color,
+            )
+
+
+def add_source(ax, text, fontsize=8, color= "#888888"):
+    ax.annotate(
+        f"Source: {text}",
+        xy=(0, -0.15),
+        xycoords="axes fraction",
+        fontsize=fontsize,
+        color=color,
+    )
+
+
+def crore_formatter(x, pos):
+    "For money"
+    if x >= 1e7:
+        return f"₹{x/1e7:.0f} Cr"
+    elif x >= 1e5:
+        return f"₹{x/1e5:.0f} L"
+    return f"₹{x:.0f}"
+
+
+def lakh_formatter(x, pos):
+    "For data values"
+    return f"{x/1e5:.1f}L" if x >= 1e5 else f"{x:.0f}"
+
+
+
+
+# ---------------------------------------
+# THREAD LOADERS
+# ---------------------------------------
+
+def load_thread(thread_num, filename, **kwargs):
+    thread_dirs = {
+        1: "01_Exam_Frauds",
+        2: "02_Gender_Injustice",
+        3: "03_MP_Performance",
+        4: "04_Suppression_of_Dissent",
+        5: "05_Corruption_Electoral_Bonds",
+        }
+    base = thread_dirs.get(thread_num, f"thread_{thread_num}")
+    path = os.path.join(base, filename)
+    return load_data(path, **kwargs)
+
+
+
+
+# ---------------------------------------
+# DATABASE HELPERS
 # ---------------------------------------
 
