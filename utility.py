@@ -4,12 +4,28 @@
 
 
 import os
+import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import seaborn as sns
-from sqlalchemy import create_engine
 
+
+# ---------------------------------------
+# CONSTANTS
+# ---------------------------------------
+
+DB_PATH = "committee_data.db"
+FIG_SIZE = (20, 7)
+BG_COLOR = "#f9f6f1"
+
+THREAD_DIRS = {
+    1: "01_Exam_Frauds",
+    2: "02_Gender_Injustice",
+    3: "03_MP_Performance",
+    4: "04_Suppression_of_Dissent",
+    5: "05_Corruption_Electoral_Bonds",
+}
 
 
 # ---------------------------------------
@@ -19,9 +35,9 @@ from sqlalchemy import create_engine
 def set_style():
     sns.set_theme(style="whitegrid")
     plt.rcParams.update({
-        "figure.figsize":        (20,7),
-        "figure.facecolor":      "#f9f6f1",
-        "axes.facecolor":        "#f9f6f1",
+        "figure.figsize":        FIG_SIZE,
+        "figure.facecolor":      BG_COLOR,
+        "axes.facecolor":        BG_COLOR,
         "axes.edgecolor":        "#cccccc",
         "axes.spines.top":       False,
         "axes.spines.right":     False,
@@ -97,7 +113,9 @@ def clean_state_names(df, col):
         }
     df[col] = (
             df[col]
+            .astype(str)
             .str.strip()
+            .str.upper()
             .replace(replacements)
             .str.title()
     )
@@ -150,7 +168,7 @@ def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
 def save_fig(fig, folder, filename, dpi=175):
     os.makedirs(folder, exist_ok=True)
     path= os.path.join(folder,filename)
-    fig.savefig(path, bbox_inches= "tight", dpi= dpi, facecolor= "#f9f6f1")
+    fig.savefig(path, bbox_inches= "tight", dpi= dpi, facecolor= BG_COLOR)
     print(f"Chart saved- {path}")
     return path
 
@@ -161,7 +179,7 @@ def label_bars(ax, fmt= "{:.0f}", pad=2, fontsize=10, color= "#333333"):
         if pd.notna(h) and h != 0:
             ax.annotate(
                 fmt.format(h),
-                xy= (p.get_x() + p.get_width / 2, h),
+                xy= (p.get_x() + p.get_width() / 2, h),
                 xytext=(0, pad),
                 textcoords="offset points",
                 ha="center",
@@ -202,14 +220,7 @@ def lakh_formatter(x, pos):
 # ---------------------------------------
 
 def load_thread(thread_num, filename, **kwargs):
-    thread_dirs = {
-        1: "01_Exam_Frauds",
-        2: "02_Gender_Injustice",
-        3: "03_MP_Performance",
-        4: "04_Suppression_of_Dissent",
-        5: "05_Corruption_Electoral_Bonds",
-        }
-    base = thread_dirs.get(thread_num, f"thread_{thread_num}")
+    base = THREAD_DIRS.get(thread_num, f"thread_{thread_num}")
     path = os.path.join(base, filename)
     return load_data(path, **kwargs)
 
@@ -220,13 +231,14 @@ def load_thread(thread_num, filename, **kwargs):
 # DATABASE HELPERS
 # ---------------------------------------
 
-def get_db_connection(user="root", password="your_password", host="localhost", database="your_db_name"):
-    engine = create_engine(f"mysql+pymysql://{user}:{password}@{host}/{database}")
-    return engine
+def get_db_connection(db_path=DB_PATH):
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    return conn
 
-def df_to_db(df, table_name, engine, if_exists="replace"):
-    df.to_sql(table_name, con=engine, if_exists=if_exists, index=False)
+def df_to_db(df, table_name, conn, if_exists="replace"):
+    df.to_sql(table_name, conn, if_exists=if_exists, index=False)
     print(f"Written → {table_name} | shape: {df.shape}")
 
-def query_db(query, engine):
-    return pd.read_sql_query(query, con=engine)
+def query_db(query, conn):
+    return pd.read_sql_query(query, conn)
