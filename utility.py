@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import seaborn as sns
-import sqlite3
+from sqlalchemy import create_engine
 
 
 
@@ -221,3 +221,13 @@ def load_thread(thread_num, filename, **kwargs):
 # DATABASE HELPERS
 # ---------------------------------------
 
+def get_db_connection(user="root", password="your_password", host="localhost", database="your_db_name"):
+    engine = create_engine(f"mysql+pymysql://{user}:{password}@{host}/{database}")
+    return engine
+
+def df_to_db(df, table_name, engine, if_exists="replace"):
+    df.to_sql(table_name, con=engine, if_exists=if_exists, index=False)
+    print(f"Written → {table_name} | shape: {df.shape}")
+
+def query_db(query, engine):
+    return pd.read_sql_query(query, con=engine)
