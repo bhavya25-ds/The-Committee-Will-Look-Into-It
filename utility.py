@@ -88,6 +88,35 @@ def eda(df, name="DataFrame"):
     print(f"\nSample:\n{df.head(3).to_string()}")
 
 
+def missing_report(df, name="DataFrame", sparse_threshold=50):
+    """
+    Prints null counts, null %, dtype, and flags columns with >sparse_threshold% nulls as SPARSE.
+    """
+    
+    print(f"  {name}")
+    print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols\n")
+
+    null_counts = df.isnull().sum()
+    null_pct    = (df.isnull().mean() * 100).round(2)
+
+    report = pd.DataFrame({
+        "dtype"      : df.dtypes,
+        "null_count" : null_counts,
+        "null_%"     : null_pct,
+    })
+    report["flag"] = report["null_%"].apply(
+        lambda x: "SPARSE" if x > sparse_threshold else ""
+    )
+
+    print(report.to_string())
+
+    sparse_cols = report[report["flag"] != ""].index.tolist()
+    if sparse_cols:
+        print(f"\nSparse columns (>{sparse_threshold}% null): {sparse_cols}")
+    else:
+        print(f"\nNo columns exceed {sparse_threshold}% null threshold.")
+
+
 
 
 # ---------------------------------------
@@ -138,7 +167,7 @@ def drop_totals(df, col, keywords= ("total", "all india", "india total")):
 
 
 def clean_amount(series):
-    "convert indian currency strings like '1,00,00,000' or '₹10 cr to plain intergers" 
+    """Convert Indian currency strings like '1,00,00,000' or '₹10 Cr' to plain integers."""
     return(
         series.astype(str)
         .str.replace(r"[₹,\s]", "", regex=True)
@@ -148,7 +177,33 @@ def clean_amount(series):
     )
 
 
+def conviction_rate(convicted, tried):
+    """
+    Returns conviction rate as a percentage.
+    Both inputs can be scalars or Series.
+    Returns NaN where tried == 0 to avoid division by zero.
+    """
+    convicted = pd.to_numeric(convicted, errors="coerce")
+    tried     = pd.to_numeric(tried,     errors="coerce")
+    return (convicted / tried.replace(0, pd.NA)) * 100
+
+
+def per_lakh(count, population):
+    """
+    Returns incidents per lakh (100,000) population.
+    Both inputs can be scalars or Series.
+    Returns NaN where population == 0 to avoid division by zero.
+    """
+    count      = pd.to_numeric(count,      errors="coerce")
+    population = pd.to_numeric(population, errors="coerce")
+    return (count / population.replace(0, pd.NA)) * 1e5
+
+
 def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
+    # Example (NCRB data):
+    #   long_df = wide_to_long(df, id_cols=["state_ut", "crime_head"], value_name="cases", var_name="year")
+    #   Turns year columns (2019, 2020, 2021 …) into a single 'year' column with one row per state-crime-year.
+    
     id_vars = [id_cols] if isinstance(id_cols, str) else id_cols
     
     long_df = df.melt(
