@@ -158,7 +158,7 @@ def fill_numeric_nulls(df, cols, fill_value=0):
     return df
 
 
-def drop_totals(df, col, keywords= ("Total", "Total State (S)", "Total UT (S)", "Total All India", "All India", "India Total", "ALL INDIA", "All India (Total)")):
+def drop_totals(df, col, keywords= ("Total", "Total State (S)", "Total UT (S)", "Total All India", "All India", "India Total", "ALL INDIA", "TOTAL CITIES", "All India (Total)")):
     mask= df[col].str.lower().str.strip().isin([k.lower() for k in keywords])
     dropped= mask.sum()
     df= df[~mask].reset_index(drop=True)
