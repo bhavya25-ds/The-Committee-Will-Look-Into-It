@@ -81,22 +81,30 @@ def save_clean(df, path):
 # ---------------------------------------
 
 def eda(df, name="DataFrame"):
-    print(f"=== {name} ===")
-    print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols")
-    print(f"Duplicates  : {df.duplicated().sum()}")
-
-    print(f"\nDtypes:\n{df.dtypes.to_string()}")
-    print(f"\nNull counts:\n{df.isnull().sum().to_string()}")
-    print(f"\nNull %:\n{(df.isnull().mean() * 100).round(2).to_string()}")
-    print(f"\n'Uniques':\n{df.nunique()}")
-
-    num_cols = df.select_dtypes(include=[np.number]).columns
-    if len(num_cols) > 0:
-        stats = df[num_cols].agg(['min', 'max', 'mean', 'median']).T.round(2)
-        print(f"\nNumeric Stats (Min/Max/Mean/Median):\n{stats.to_string()}")
-
-    print(f"\nSample:\n{df.head(3).to_string()}")
-
+    with pd.option_context(
+        'display.max_columns', None, 
+        'display.max_rows', None, 
+        'display.max_colwidth', None,
+        'display.width', None
+    ):
+        print(f"=== {name} ===")
+        print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols")
+        print(f"Duplicates  : {df.duplicated().sum()}")
+        
+        null_info = pd.DataFrame({
+            'Dtype': df.dtypes,
+            'Nulls': df.isnull().sum(),
+            'Null %': (df.isnull().mean() * 100).round(2),
+            'Uniques': df.nunique()
+        })
+        print(f"\nColumn Summary:\n{null_info.to_string()}")
+        
+        num_cols = df.select_dtypes(include=['number']).columns
+        if len(num_cols) > 0:
+            stats = df[num_cols].agg(['min', 'max', 'mean', 'median']).T.round(2)
+            print(f"\nNumeric Stats:\n{stats.to_string()}")
+            
+        print(f"\nSample:\n{df.head(3).to_string()}\n")
 
 def missing_report(df, name="DataFrame", sparse_threshold=50):
     """
