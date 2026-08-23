@@ -6,6 +6,7 @@
 import os
 import sqlite3
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import seaborn as sns
@@ -80,11 +81,20 @@ def save_clean(df, path):
 # ---------------------------------------
 
 def eda(df, name="DataFrame"):
-    print(f"  {name}")
+    print(f"=== {name} ===")
     print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols")
+    print(f"Duplicates  : {df.duplicated().sum()}")
+
     print(f"\nDtypes:\n{df.dtypes.to_string()}")
     print(f"\nNull counts:\n{df.isnull().sum().to_string()}")
     print(f"\nNull %:\n{(df.isnull().mean() * 100).round(2).to_string()}")
+    print(f"\n'Uniques':\n{df.nunique()}")
+
+    num_cols = df.select_dtypes(include=[np.number]).columns
+    if len(num_cols) > 0:
+        stats = df[num_cols].agg(['min', 'max', 'mean', 'median']).T.round(2)
+        print(f"\nNumeric Stats (Min/Max/Mean/Median):\n{stats.to_string()}")
+
     print(f"\nSample:\n{df.head(3).to_string()}")
 
 
