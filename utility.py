@@ -80,7 +80,7 @@ def save_clean(df, path):
 # EDA
 # ---------------------------------------
 
-def eda(df, name="DataFrame"):
+def eda(df, name="DataFrame", sparse_threshold=50):
     with pd.option_context(
         'display.max_columns', None, 
         'display.max_rows', None, 
@@ -91,13 +91,20 @@ def eda(df, name="DataFrame"):
         print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols")
         print(f"Duplicates  : {df.duplicated().sum()}")
         
-        null_info = pd.DataFrame({
+        null_pct = (df.isnull().mean() * 100).round(2)
+        
+        column_summary = pd.DataFrame({
             'Dtype': df.dtypes,
             'Nulls': df.isnull().sum(),
-            'Null %': (df.isnull().mean() * 100).round(2),
-            'Uniques': df.nunique()
+            'Null %': null_pct,
+            'Uniques': df.nunique(),
+            'Flag': null_pct.apply(lambda x: 'SPARSE' if x > sparse_threshold else '')
         })
-        print(f"\nColumn Summary:\n{null_info.to_string()}")
+        print(f"\nColumn Summary:\n{column_summary.to_string()}")
+        
+        sparse_cols = column_summary[column_summary['Flag'] != ''].index.tolist()
+        if sparse_cols:
+            print(f"\nSparse Columns (>{sparse_threshold}% null): {sparse_cols}")
         
         num_cols = df.select_dtypes(include=['number']).columns
         if len(num_cols) > 0:
@@ -105,35 +112,6 @@ def eda(df, name="DataFrame"):
             print(f"\nNumeric Stats:\n{stats.to_string()}")
             
         print(f"\nSample:\n{df.head(3).to_string()}\n")
-
-def missing_report(df, name="DataFrame", sparse_threshold=50):
-    """
-    Prints null counts, null %, dtype, and flags columns with >sparse_threshold% nulls as SPARSE.
-    """
-    
-    print(f"  {name}")
-    print(f"Shape       : {df.shape[0]} rows × {df.shape[1]} cols\n")
-
-    null_counts = df.isnull().sum()
-    null_pct    = (df.isnull().mean() * 100).round(2)
-
-    report = pd.DataFrame({
-        "dtype"      : df.dtypes,
-        "null_count" : null_counts,
-        "null_%"     : null_pct,
-    })
-    report["flag"] = report["null_%"].apply(
-        lambda x: "SPARSE" if x > sparse_threshold else ""
-    )
-
-    print(report.to_string())
-
-    sparse_cols = report[report["flag"] != ""].index.tolist()
-    if sparse_cols:
-        print(f"\nSparse columns (>{sparse_threshold}% null): {sparse_cols}")
-    else:
-        print(f"\nNo columns exceed {sparse_threshold}% null threshold.")
-
 
 
 
@@ -169,11 +147,15 @@ def clean_state_names(df, col):
     return df
 
 
+
+
 def fill_numeric_nulls(df, cols, fill_value=0):
     for col in cols:
         if col in df.columns:
             df[col]= df[col].fillna(fill_value)
     return df
+
+
 
 
 def drop_totals(df, col, keywords= ("Total", "Total State (S)", "Total UT (S)", "Total All India", "All India", "India Total", "ALL INDIA", "TOTAL CITIES", "All India (Total)")):
@@ -182,6 +164,38 @@ def drop_totals(df, col, keywords= ("Total", "Total State (S)", "Total UT (S)", 
     df= df[~mask].reset_index(drop=True)
     print(f"Dropped {dropped} aggregate rows from '{col}'")
     return df
+
+
+
+
+def drop_total_columns(df, id_cols=["sl_no", "city"], keyword="total"):
+    """
+    Filters out metric columns containing subtotal/total counts across subcategories 
+    to prevent double-counting during analysis.
+    """
+    id_vars = [id_cols] if isinstance(id_cols, str) else id_cols
+    
+    cols_to_keep = []
+    cols_dropped = 0
+    
+    for col in df.columns:
+        if col in id_vars:
+            cols_to_keep.append(col)
+            continue
+            
+        parts = [p.strip() for p in col.split(" | ")]
+        
+        has_total = any(keyword.lower() in part.lower() for part in parts[1:])
+        
+        if has_total:
+            cols_dropped += 1
+        else:
+            cols_to_keep.append(col)
+            
+    print(f"Dropped {cols_dropped} aggregate/subtotal columns")
+    return df[cols_to_keep]
+
+
 
 
 def clean_amount(series):
@@ -195,6 +209,8 @@ def clean_amount(series):
     )
 
 
+
+
 def conviction_rate(convicted, tried):
     """
     Returns conviction rate as a percentage.
@@ -206,6 +222,8 @@ def conviction_rate(convicted, tried):
     return (convicted / tried.replace(0, pd.NA)) * 100
 
 
+
+
 def per_lakh(count, population):
     """
     Returns incidents per lakh (100,000) population.
@@ -215,6 +233,8 @@ def per_lakh(count, population):
     count      = pd.to_numeric(count,      errors="coerce")
     population = pd.to_numeric(population, errors="coerce")
     return (count / population.replace(0, pd.NA)) * 1e5
+
+
 
 
 def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
@@ -230,6 +250,36 @@ def wide_to_long(df, id_cols, value_name="crime_count", var_name="year"):
         value_name=value_name
     )
     return long_df
+
+
+
+
+def clean_disposal_headers(df, header_start=1, header_end=5, data_start=6):
+    """
+    Flattens multi-row stacked headers (Rows 1-4) in raw NCRB Persons Disposal Excel sheets.
+    Accepts raw DataFrame loaded with header=None.
+    """
+    headers = df.iloc[header_start:header_end, :].ffill(axis=1)
+    
+    col_names = []
+    for col_idx in range(df.shape[1]):
+        parts = []
+        for r_idx in range(header_end - header_start):
+            val = str(headers.iloc[r_idx, col_idx]).strip()
+            if val != 'nan' and (not parts or parts[-1] != val):
+                parts.append(val)
+        col_names.append(" | ".join(parts))
+        
+    col_names[0] = "sl_no"
+    col_names[1] = "city"
+    
+    clean_df = df.iloc[data_start:].copy().reset_index(drop=True)
+    clean_df.columns = col_names
+    
+    for col in clean_df.columns[2:]:
+        clean_df[col] = pd.to_numeric(clean_df[col], errors="coerce")
+        
+    return clean_df
 
 
 
