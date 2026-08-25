@@ -5093,7 +5093,7 @@ Year,State_UT,Is_Detailed_Subcategory,Count,Crime_Head_Standardized,Crime_Head_S
 2015,Jharkhand,False,6568.0,Others / Unclassified,total crimes against women after 2014
 2015,Karnataka,False,12775.0,Others / Unclassified,total crimes against women after 2014
 2015,Kerala,False,9767.0,Others / Unclassified,total crimes against women after 2014
-2015,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
+2015,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
 2015,Lakshadweep,False,9.0,Others / Unclassified,total crimes against women after 2014
 2015,Madhya Pradesh,False,24231.0,Others / Unclassified,total crimes against women after 2014
 2015,Maharashtra,False,31216.0,Others / Unclassified,total crimes against women after 2014
@@ -5129,7 +5129,7 @@ Year,State_UT,Is_Detailed_Subcategory,Count,Crime_Head_Standardized,Crime_Head_S
 2016,Jharkhand,False,5453.0,Others / Unclassified,total crimes against women after 2014
 2016,Karnataka,False,14131.0,Others / Unclassified,total crimes against women after 2014
 2016,Kerala,False,10034.0,Others / Unclassified,total crimes against women after 2014
-2016,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
+2016,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
 2016,Lakshadweep,False,9.0,Others / Unclassified,total crimes against women after 2014
 2016,Madhya Pradesh,False,26604.0,Others / Unclassified,total crimes against women after 2014
 2016,Maharashtra,False,31388.0,Others / Unclassified,total crimes against women after 2014
@@ -5165,7 +5165,7 @@ Year,State_UT,Is_Detailed_Subcategory,Count,Crime_Head_Standardized,Crime_Head_S
 2017,Jharkhand,False,5911.0,Others / Unclassified,total crimes against women after 2014
 2017,Karnataka,False,14078.0,Others / Unclassified,total crimes against women after 2014
 2017,Kerala,False,11057.0,Others / Unclassified,total crimes against women after 2014
-2017,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
+2017,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
 2017,Lakshadweep,False,6.0,Others / Unclassified,total crimes against women after 2014
 2017,Madhya Pradesh,False,29788.0,Others / Unclassified,total crimes against women after 2014
 2017,Maharashtra,False,31979.0,Others / Unclassified,total crimes against women after 2014
@@ -5201,7 +5201,7 @@ Year,State_UT,Is_Detailed_Subcategory,Count,Crime_Head_Standardized,Crime_Head_S
 2018,Jharkhand,False,7083.0,Others / Unclassified,total crimes against women after 2014
 2018,Karnataka,False,13514.0,Others / Unclassified,total crimes against women after 2014
 2018,Kerala,False,10461.0,Others / Unclassified,total crimes against women after 2014
-2018,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
+2018,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
 2018,Lakshadweep,False,11.0,Others / Unclassified,total crimes against women after 2014
 2018,Madhya Pradesh,False,28942.0,Others / Unclassified,total crimes against women after 2014
 2018,Maharashtra,False,35497.0,Others / Unclassified,total crimes against women after 2014
@@ -5237,7 +5237,7 @@ Year,State_UT,Is_Detailed_Subcategory,Count,Crime_Head_Standardized,Crime_Head_S
 2019,Jharkhand,False,8760.0,Others / Unclassified,total crimes against women after 2014
 2019,Karnataka,False,13828.0,Others / Unclassified,total crimes against women after 2014
 2019,Kerala,False,11462.0,Others / Unclassified,total crimes against women after 2014
-2019,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
+2019,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
 2019,Lakshadweep,False,38.0,Others / Unclassified,total crimes against women after 2014
 2019,Madhya Pradesh,False,27560.0,Others / Unclassified,total crimes against women after 2014
 2019,Maharashtra,False,37144.0,Others / Unclassified,total crimes against women after 2014
@@ -5364,111 +5364,111 @@ Year,State_UT,Is_Detailed_Subcategory,Count,Crime_Head_Standardized,Crime_Head_S
 2022,Uttar Pradesh,False,65743.0,Others / Unclassified,total crimes against women after 2014
 2022,Uttarakhand,False,4337.0,Others / Unclassified,total crimes against women after 2014
 2022,West Bengal,False,34738.0,Others / Unclassified,total crimes against women after 2014
-2023,Andaman & Nicobar Islands,False,,Others / Unclassified,total crimes against women after 2014
-2023,Andhra Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2023,Arunachal Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2023,Assam,False,,Others / Unclassified,total crimes against women after 2014
-2023,Bihar,False,,Others / Unclassified,total crimes against women after 2014
-2023,Chandigarh,False,,Others / Unclassified,total crimes against women after 2014
-2023,Chhattisgarh,False,,Others / Unclassified,total crimes against women after 2014
-2023,Dadra & Nagar Haveli and Daman & Diu,False,,Others / Unclassified,total crimes against women after 2014
-2023,Delhi,False,,Others / Unclassified,total crimes against women after 2014
-2023,Goa,False,,Others / Unclassified,total crimes against women after 2014
-2023,Gujarat,False,,Others / Unclassified,total crimes against women after 2014
-2023,Haryana,False,,Others / Unclassified,total crimes against women after 2014
-2023,Himachal Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2023,Jammu & Kashmir,False,,Others / Unclassified,total crimes against women after 2014
-2023,Jharkhand,False,,Others / Unclassified,total crimes against women after 2014
-2023,Karnataka,False,,Others / Unclassified,total crimes against women after 2014
-2023,Kerala,False,,Others / Unclassified,total crimes against women after 2014
-2023,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
-2023,Lakshadweep,False,,Others / Unclassified,total crimes against women after 2014
+2023,Andaman & Nicobar Islands,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Andhra Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Arunachal Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Assam,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Bihar,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Chandigarh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Chhattisgarh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Dadra & Nagar Haveli and Daman & Diu,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Delhi,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Goa,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Gujarat,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Haryana,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Himachal Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Jammu & Kashmir,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Jharkhand,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Karnataka,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Kerala,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Lakshadweep,False,0.0,Others / Unclassified,total crimes against women after 2014
 2023,Madhya Pradesh,False,32342.0,Others / Unclassified,total crimes against women after 2014
 2023,Maharashtra,False,47101.0,Others / Unclassified,total crimes against women after 2014
-2023,Manipur,False,,Others / Unclassified,total crimes against women after 2014
-2023,Meghalaya,False,,Others / Unclassified,total crimes against women after 2014
-2023,Mizoram,False,,Others / Unclassified,total crimes against women after 2014
-2023,Nagaland,False,,Others / Unclassified,total crimes against women after 2014
-2023,Odisha,False,,Others / Unclassified,total crimes against women after 2014
-2023,Puducherry,False,,Others / Unclassified,total crimes against women after 2014
-2023,Punjab,False,,Others / Unclassified,total crimes against women after 2014
+2023,Manipur,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Meghalaya,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Mizoram,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Nagaland,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Odisha,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Puducherry,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Punjab,False,0.0,Others / Unclassified,total crimes against women after 2014
 2023,Rajasthan,False,45450.0,Others / Unclassified,total crimes against women after 2014
-2023,Sikkim,False,,Others / Unclassified,total crimes against women after 2014
-2023,Tamil Nadu,False,,Others / Unclassified,total crimes against women after 2014
-2023,Telangana,False,,Others / Unclassified,total crimes against women after 2014
-2023,Tripura,False,,Others / Unclassified,total crimes against women after 2014
+2023,Sikkim,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Tamil Nadu,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Telangana,False,0.0,Others / Unclassified,total crimes against women after 2014
+2023,Tripura,False,0.0,Others / Unclassified,total crimes against women after 2014
 2023,Uttar Pradesh,False,66381.0,Others / Unclassified,total crimes against women after 2014
-2023,Uttarakhand,False,,Others / Unclassified,total crimes against women after 2014
+2023,Uttarakhand,False,0.0,Others / Unclassified,total crimes against women after 2014
 2023,West Bengal,False,34691.0,Others / Unclassified,total crimes against women after 2014
-2024,Andaman & Nicobar Islands,False,,Others / Unclassified,total crimes against women after 2014
-2024,Andhra Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Arunachal Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Assam,False,,Others / Unclassified,total crimes against women after 2014
-2024,Bihar,False,,Others / Unclassified,total crimes against women after 2014
-2024,Chandigarh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Chhattisgarh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Dadra & Nagar Haveli and Daman & Diu,False,,Others / Unclassified,total crimes against women after 2014
-2024,Delhi,False,,Others / Unclassified,total crimes against women after 2014
-2024,Goa,False,,Others / Unclassified,total crimes against women after 2014
-2024,Gujarat,False,,Others / Unclassified,total crimes against women after 2014
-2024,Haryana,False,,Others / Unclassified,total crimes against women after 2014
-2024,Himachal Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Jammu & Kashmir,False,,Others / Unclassified,total crimes against women after 2014
-2024,Jharkhand,False,,Others / Unclassified,total crimes against women after 2014
-2024,Karnataka,False,,Others / Unclassified,total crimes against women after 2014
-2024,Kerala,False,,Others / Unclassified,total crimes against women after 2014
-2024,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Lakshadweep,False,,Others / Unclassified,total crimes against women after 2014
-2024,Madhya Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Maharashtra,False,,Others / Unclassified,total crimes against women after 2014
-2024,Manipur,False,,Others / Unclassified,total crimes against women after 2014
-2024,Meghalaya,False,,Others / Unclassified,total crimes against women after 2014
-2024,Mizoram,False,,Others / Unclassified,total crimes against women after 2014
-2024,Nagaland,False,,Others / Unclassified,total crimes against women after 2014
-2024,Odisha,False,,Others / Unclassified,total crimes against women after 2014
-2024,Puducherry,False,,Others / Unclassified,total crimes against women after 2014
-2024,Punjab,False,,Others / Unclassified,total crimes against women after 2014
-2024,Rajasthan,False,,Others / Unclassified,total crimes against women after 2014
-2024,Sikkim,False,,Others / Unclassified,total crimes against women after 2014
-2024,Tamil Nadu,False,,Others / Unclassified,total crimes against women after 2014
-2024,Telangana,False,,Others / Unclassified,total crimes against women after 2014
-2024,Tripura,False,,Others / Unclassified,total crimes against women after 2014
-2024,Uttar Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2024,Uttarakhand,False,,Others / Unclassified,total crimes against women after 2014
-2024,West Bengal,False,,Others / Unclassified,total crimes against women after 2014
-2025,Andaman & Nicobar Islands,False,,Others / Unclassified,total crimes against women after 2014
-2025,Andhra Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Arunachal Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Assam,False,,Others / Unclassified,total crimes against women after 2014
-2025,Bihar,False,,Others / Unclassified,total crimes against women after 2014
-2025,Chandigarh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Chhattisgarh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Dadra & Nagar Haveli and Daman & Diu,False,,Others / Unclassified,total crimes against women after 2014
-2025,Delhi,False,,Others / Unclassified,total crimes against women after 2014
-2025,Goa,False,,Others / Unclassified,total crimes against women after 2014
-2025,Gujarat,False,,Others / Unclassified,total crimes against women after 2014
-2025,Haryana,False,,Others / Unclassified,total crimes against women after 2014
-2025,Himachal Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Jammu & Kashmir,False,,Others / Unclassified,total crimes against women after 2014
-2025,Jharkhand,False,,Others / Unclassified,total crimes against women after 2014
-2025,Karnataka,False,,Others / Unclassified,total crimes against women after 2014
-2025,Kerala,False,,Others / Unclassified,total crimes against women after 2014
-2025,Ladakh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Lakshadweep,False,,Others / Unclassified,total crimes against women after 2014
-2025,Madhya Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Maharashtra,False,,Others / Unclassified,total crimes against women after 2014
-2025,Manipur,False,,Others / Unclassified,total crimes against women after 2014
-2025,Meghalaya,False,,Others / Unclassified,total crimes against women after 2014
-2025,Mizoram,False,,Others / Unclassified,total crimes against women after 2014
-2025,Nagaland,False,,Others / Unclassified,total crimes against women after 2014
-2025,Odisha,False,,Others / Unclassified,total crimes against women after 2014
-2025,Puducherry,False,,Others / Unclassified,total crimes against women after 2014
-2025,Punjab,False,,Others / Unclassified,total crimes against women after 2014
-2025,Rajasthan,False,,Others / Unclassified,total crimes against women after 2014
-2025,Sikkim,False,,Others / Unclassified,total crimes against women after 2014
-2025,Tamil Nadu,False,,Others / Unclassified,total crimes against women after 2014
-2025,Telangana,False,,Others / Unclassified,total crimes against women after 2014
-2025,Tripura,False,,Others / Unclassified,total crimes against women after 2014
-2025,Uttar Pradesh,False,,Others / Unclassified,total crimes against women after 2014
-2025,Uttarakhand,False,,Others / Unclassified,total crimes against women after 2014
-2025,West Bengal,False,,Others / Unclassified,total crimes against women after 2014
+2024,Andaman & Nicobar Islands,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Andhra Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Arunachal Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Assam,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Bihar,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Chandigarh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Chhattisgarh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Dadra & Nagar Haveli and Daman & Diu,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Delhi,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Goa,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Gujarat,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Haryana,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Himachal Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Jammu & Kashmir,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Jharkhand,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Karnataka,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Kerala,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Lakshadweep,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Madhya Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Maharashtra,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Manipur,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Meghalaya,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Mizoram,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Nagaland,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Odisha,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Puducherry,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Punjab,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Rajasthan,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Sikkim,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Tamil Nadu,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Telangana,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Tripura,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Uttar Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,Uttarakhand,False,0.0,Others / Unclassified,total crimes against women after 2014
+2024,West Bengal,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Andaman & Nicobar Islands,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Andhra Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Arunachal Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Assam,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Bihar,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Chandigarh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Chhattisgarh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Dadra & Nagar Haveli and Daman & Diu,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Delhi,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Goa,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Gujarat,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Haryana,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Himachal Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Jammu & Kashmir,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Jharkhand,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Karnataka,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Kerala,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Ladakh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Lakshadweep,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Madhya Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Maharashtra,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Manipur,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Meghalaya,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Mizoram,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Nagaland,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Odisha,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Puducherry,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Punjab,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Rajasthan,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Sikkim,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Tamil Nadu,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Telangana,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Tripura,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Uttar Pradesh,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,Uttarakhand,False,0.0,Others / Unclassified,total crimes against women after 2014
+2025,West Bengal,False,0.0,Others / Unclassified,total crimes against women after 2014
