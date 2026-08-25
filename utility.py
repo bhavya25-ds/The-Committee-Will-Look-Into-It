@@ -311,6 +311,12 @@ def standardize_crime_data(
   """
   # Priority-ordered rules: (Regex Pattern, Major Category, Subcategory)
   rules = [
+      # 0. Total Crimes Against Women After 2014
+      (
+          r'total crimes against women after 2014',
+          'Total crimes against women in the state',
+          'Total crimes against women in the state',
+      ),
       # 1. Rape & Attempted Rape
       (r'custodial.*gang', 'Rape & Attempted Rape', 'Custodial Gang Rape'),
       (r'custodial', 'Rape & Attempted Rape', 'Custodial Rape'),
@@ -439,7 +445,6 @@ def standardize_crime_data(
   )
 
   return output_df
-
 
 
 
