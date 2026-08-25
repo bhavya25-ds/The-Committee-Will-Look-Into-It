@@ -10,6 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import seaborn as sns
+import re
 
 
 # ---------------------------------------
@@ -280,6 +281,164 @@ def clean_disposal_headers(df, header_start=1, header_end=5, data_start=6):
         clean_df[col] = pd.to_numeric(clean_df[col], errors="coerce")
         
     return clean_df
+
+
+
+
+def standardize_crime_data(
+    df: pd.DataFrame,
+    source_col: str,
+    cat_col: str = 'Crime_Head_Standardized',
+    subcat_col: str = 'Crime_Head_Subcategory',
+) -> pd.DataFrame:
+  """Standardizes raw and number-stripped NCRB crime category descriptions into clean, non-redundant major categories and specific subcategories.
+
+  Parameters:
+  -----------
+  df : pd.DataFrame
+      The input DataFrame containing crime records.
+  source_col : str
+      The column name to standardize (e.g., 'Crime_Head').
+  cat_col : str, default 'Crime_Head_Standardized'
+      Name for the generated major category column.
+  subcat_col : str, default 'Crime_Head_Subcategory'
+      Name for the generated subcategory column.
+
+  Returns:
+  --------
+  pd.DataFrame
+      DataFrame with two new standardized columns attached.
+  """
+  # Priority-ordered rules: (Regex Pattern, Major Category, Subcategory)
+  rules = [
+      # 1. Rape & Attempted Rape
+      (r'custodial.*gang', 'Rape & Attempted Rape', 'Custodial Gang Rape'),
+      (r'custodial', 'Rape & Attempted Rape', 'Custodial Rape'),
+      (r'gang rape', 'Rape & Attempted Rape', 'Gang Rape'),
+      (r'attempt', 'Rape & Attempted Rape', 'Attempt to Commit Rape'),
+      (r'rape', 'Rape & Attempted Rape', 'Rape (General/Other)'),
+      # 2. Kidnapping & Abduction
+      (
+          r'murder|364(?!\w)',
+          'Kidnapping & Abduction',
+          'Kidnapping in Order to Murder',
+      ),
+      (r'ransom|364a', 'Kidnapping & Abduction', 'Kidnapping for Ransom'),
+      (
+          r'marriage',
+          'Kidnapping & Abduction',
+          'Kidnapping to Compel Marriage',
+      ),
+      (
+          r'kidnap|abduct|363',
+          'Kidnapping & Abduction',
+          'Kidnapping & Abduction (General)',
+      ),
+      # 3. Cruelty & Dowry Offenses
+      (r'dowry death|304-?b', 'Cruelty & Dowry Offenses', 'Dowry Death'),
+      (
+          r'dowry prohibition|prohibition act|1961',
+          'Cruelty & Dowry Offenses',
+          'Dowry Prohibition Act',
+      ),
+      (
+          r'cruelty|498a',
+          'Cruelty & Dowry Offenses',
+          'Cruelty by Husband/Relatives',
+      ),
+      (
+          r'domestic violence',
+          'Cruelty & Dowry Offenses',
+          'Domestic Violence Act',
+      ),
+      # 4. Assault & Sexual Harassment / Outrage to Modesty
+      (
+          r'disrobe',
+          'Assault & Sexual Harassment',
+          'Assault with Intent to Disrobe',
+      ),
+      (r'voyeurism', 'Assault & Sexual Harassment', 'Voyeurism'),
+      (r'stalking', 'Assault & Sexual Harassment', 'Stalking'),
+      (
+          r'office|work',
+          'Assault & Sexual Harassment',
+          'Sexual Harassment (Workplace)',
+      ),
+      (
+          r'public transport',
+          'Assault & Sexual Harassment',
+          'Sexual Harassment (Public Transport)',
+      ),
+      (
+          r'outrage.*modest|sexual harassment',
+          'Assault & Sexual Harassment',
+          'Assault to Outrage Modesty',
+      ),
+      (
+          r'insult.*modesty',
+          'Assault & Sexual Harassment',
+          'Insult to Modesty of Women',
+      ),
+      (
+          r'in other places|other places',
+          'Assault & Sexual Harassment',
+          'Harassment in Other Places',
+      ),
+      (
+          r'5\.5|others',
+          'Assault & Sexual Harassment',
+          'Other Assaults / Harassment',
+      ),
+      # 5. Human Trafficking & Foreign Importation
+      (
+          r'importation.*girls|366b',
+          'Human Trafficking',
+          'Importation of Girls from Foreign Country',
+      ),
+      (
+          r'immoral traffic|itp|under itp',
+          'Human Trafficking',
+          'Immoral Traffic (Prevention) Act',
+      ),
+      # 6. Special & Local Laws (SLL)
+      (
+          r'indecent representation',
+          'Special & Local Laws',
+          'Indecent Representation of Women Act',
+      ),
+      (r'sati', 'Special & Local Laws', 'Commission of Sati Prevention Act'),
+      (
+          r'suicide|306',
+          'Special & Local Laws',
+          'Abetment of Suicide of Women',
+      ),
+  ]
+
+  # Compute mapping across unique string entries for maximum execution speed
+  unique_entries = df[source_col].dropna().unique()
+  mapping = {}
+
+  for raw in unique_entries:
+    clean_text = str(raw).strip().lower()
+    matched = False
+    for pattern, major_cat, sub_cat in rules:
+      if re.search(pattern, clean_text):
+        mapping[raw] = (major_cat, sub_cat)
+        matched = True
+        break
+    if not matched:
+      mapping[raw] = ('Others / Unclassified', str(raw))
+
+  # Map dictionary results back to DataFrame columns
+  output_df = df.copy()
+  output_df[cat_col] = output_df[source_col].map(
+      lambda x: mapping.get(x, ('Others / Unclassified', str(x)))[0]
+  )
+  output_df[subcat_col] = output_df[source_col].map(
+      lambda x: mapping.get(x, ('Others / Unclassified', str(x)))[1]
+  )
+
+  return output_df
 
 
 
