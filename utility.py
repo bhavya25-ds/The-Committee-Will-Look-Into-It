@@ -453,6 +453,48 @@ def standardize_crime_data(
 
 
 
+
+def shorten_crime_categories(df: pd.DataFrame, col_name: str) -> pd.DataFrame:
+  """Cleans and shortens lengthy hierarchical crime status categories into concise,
+  readable labels, extracting the gender into a separate column.
+  """
+  output_df = df.copy()
+
+  # Vectorized/mapped transformation across unique entries for maximum speed
+  unique_vals = output_df[col_name].dropna().unique()
+  mapping = {}
+  gender_mapping = {}
+
+  for val in unique_vals:
+    parts = [p.strip() for p in str(val).split('|')]
+    # Gender is always the last segment
+    gender = parts[-1] if len(parts) > 0 else ''
+    core_desc = parts[-2] if len(parts) > 1 else parts[0]
+
+    # Optional cleanup for extra verbose clauses
+    core_desc = core_desc.replace(
+        'Persons to whom Notice Issued during the year (but not Arrested) (Sec.41 CrPC)',
+        'Notice Issued (Sec. 41 CrPC)',
+    )
+
+    # Set the mapping to core_desc only (without the appended gender)
+    mapping[val] = core_desc
+    gender_mapping[val] = gender
+
+  # Create the separate gender column and map values back
+  output_df['Arrested_Gender'] = (
+      output_df[col_name].map(gender_mapping).fillna('')
+  )
+
+  # Apply mapping back to the DataFrame column
+  output_df[col_name] = (
+      output_df[col_name].map(mapping).fillna(output_df[col_name])
+  )
+  return output_df
+
+
+
+
 # ---------------------------------------
 # GRAPHS PLOTTING
 # ---------------------------------------
