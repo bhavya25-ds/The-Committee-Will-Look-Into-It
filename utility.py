@@ -225,15 +225,20 @@ def conviction_rate(convicted, tried):
 
 
 
-def per_lakh(count, population):
-    """
-    Returns incidents per lakh (100,000) population.
-    Both inputs can be scalars or Series.
-    Returns NaN where population == 0 to avoid division by zero.
-    """
-    count      = pd.to_numeric(count,      errors="coerce")
-    population = pd.to_numeric(population, errors="coerce")
-    return (count / population.replace(0, pd.NA)) * 1e5
+def per_lakh(df, cols):
+  """Multiplies the specified population column(s) by 100,000 to convert
+  from lakhs to absolute numbers, modifying the DataFrame in-place
+  and returning it.
+  """
+  if isinstance(cols, str):
+    cols = [cols]
+
+  for col in cols:
+    if col in df.columns:
+      numeric_col = pd.to_numeric(df[col], errors='coerce')
+      df[col] = numeric_col * 1e5
+
+  return df
 
 
 
