@@ -1,37 +1,793 @@
-Category,State/UT,Punishment for Rape,Rape in Custody - By Police Personnel,Rape in Custody - By Public Servant ,Rape in Custody  - By Member of Armed Forces ,Rape in Custody - By Management/Staff of Jail/Remand Home/Place of Custody ,Rape in Custody  - By Management/ Staff of Hospital,Other Than Custodial Rape- By Relative/Guardian/Teacher/person in position of trust ,Other Than Custodial Rape- On Pregnant Women ,Other Than Custodial Rape - On Women Below 16 years of age ,Other Than Custodial Rape - On Women Incapable of giving Consent ,Other Than Custodial Rape - By Persons in Control or Dominance over women,Other Than Custodial Rape - On Women with Mental or Physical disability,Other Than Custodial Rape- Endanger life of Women after Rape ,Other Than Custodial Rape - Repeated Rape on same women,Punishment upto 20 years extended to life for Rape (Below 16 Yrs) ,Punishment for causing Death,By Separated husband ,Rape/Gang Rape of Girl Below 16 Yrs (Imprisonment for life till death) ,By Person in Authority ,Gang Rape,Rape/Gang Rape of Girl Below 12 Yrs (Imprisonment for life till death) ,Punishment for Repeat offenders 
-State,Andhra Pradesh,758,0,0,1,0,0,17,0,101,12,2,8,0,98,15,0,0,10,1,9,2,0
-State,Arunachal Pradesh,46,0,0,0,0,0,4,0,4,0,0,2,0,2,0,0,1,0,0,4,0,0
-State,Assam,1599,0,0,0,11,0,31,0,1,21,36,1,0,0,0,1,1,1,30,25,0,0
-State,Bihar,700,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0
-State,Chhattisgarh,546,1,0,0,0,0,267,2,77,35,1,4,3,31,0,0,0,3,0,15,0,0
-State,Goa,54,0,0,0,0,1,6,0,7,0,0,0,0,1,1,0,0,0,0,2,0,0
-State,Gujarat,429,0,0,0,0,0,14,1,0,0,1,4,2,62,0,0,0,0,0,14,0,0
-State,Haryana,900,0,1,0,0,1,11,4,0,0,0,0,0,308,0,2,4,0,1,159,0,49
-State,Himachal Pradesh,302,0,0,0,0,0,26,0,23,0,0,0,0,1,2,0,0,1,0,4,0,0
-State,Jammu & Kashmir,177,0,0,0,0,0,46,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-State,Jharkhand,1253,0,0,0,0,0,0,0,31,0,0,0,0,25,11,0,0,4,2,52,1,0
-State,Karnataka,451,0,0,0,0,0,8,0,0,0,0,5,1,13,1,0,0,0,0,7,0,0
-State,Kerala,1043,0,0,0,0,0,204,1,203,19,5,17,4,318,35,1,0,71,2,7,3,1
-State,Madhya Pradesh,1007,3,1,0,1,1,140,11,73,26,12,17,11,748,6,0,6,10,3,162,1,52
-State,Maharashtra,1564,0,0,0,0,0,89,6,54,23,3,29,3,343,4,10,7,8,2,63,0,1
-State,Manipur,26,0,0,0,0,0,4,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0
-State,Meghalaya,68,0,0,0,0,0,2,0,20,0,1,2,2,0,0,0,1,0,0,5,0,0
-State,Mizoram,15,0,0,0,0,0,3,0,0,0,1,1,0,0,5,0,0,13,0,1,0,0
-State,Nagaland,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-State,Odisha,785,0,0,0,0,0,424,0,9,1,1,0,0,72,37,11,3,6,1,22,0,0
-State,Punjab,900,0,0,0,0,0,8,0,22,0,0,3,0,5,9,0,0,8,0,29,2,1
-State,Rajasthan,3826,1,1,0,0,0,481,3,124,216,118,2,6,160,14,0,5,11,1,902,31,0
-State,Sikkim,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-State,Tamil Nadu,334,0,0,0,0,0,14,0,0,0,1,3,0,0,0,0,1,7,0,1,0,0
-State,Telangana,613,0,0,0,0,1,9,6,2,40,0,10,1,132,1,0,1,0,0,14,0,0
-State,Tripura,73,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,6,0,0
-State,Uttar Pradesh,2701,0,10,0,12,0,27,0,0,0,0,0,0,0,0,1,2,0,0,301,0,0
-State,Uttarakhand,290,0,0,0,0,0,143,1,33,0,0,0,0,21,19,0,0,6,0,9,4,0
-State,West Bengal,1001,0,0,0,0,0,0,0,0,0,0,7,1,4,0,0,0,0,1,55,0,0
-UT,Andaman & Nicobar Islands,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0
-UT,Chandigarh,48,0,0,0,0,0,0,0,0,0,0,0,0,12,18,0,2,10,0,1,2,0
-UT,Dadra & Nagar Haveli,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-UT,Daman & Diu,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-UT,Delhi,1176,0,0,0,0,0,5,0,0,0,0,1,0,15,2,1,3,0,0,47,0,0
-UT,Lakshadweep,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-UT,Puducherry,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Category,State/UT,Offense_Category,Offense_Subcategory,Incidents
+State,Andhra Pradesh,Penalties & Legal Provisions,General Offences (Section Penalties),758
+State,Arunachal Pradesh,Penalties & Legal Provisions,General Offences (Section Penalties),46
+State,Assam,Penalties & Legal Provisions,General Offences (Section Penalties),1599
+State,Bihar,Penalties & Legal Provisions,General Offences (Section Penalties),700
+State,Chhattisgarh,Penalties & Legal Provisions,General Offences (Section Penalties),546
+State,Goa,Penalties & Legal Provisions,General Offences (Section Penalties),54
+State,Gujarat,Penalties & Legal Provisions,General Offences (Section Penalties),429
+State,Haryana,Penalties & Legal Provisions,General Offences (Section Penalties),900
+State,Himachal Pradesh,Penalties & Legal Provisions,General Offences (Section Penalties),302
+State,Jammu & Kashmir,Penalties & Legal Provisions,General Offences (Section Penalties),177
+State,Jharkhand,Penalties & Legal Provisions,General Offences (Section Penalties),1253
+State,Karnataka,Penalties & Legal Provisions,General Offences (Section Penalties),451
+State,Kerala,Penalties & Legal Provisions,General Offences (Section Penalties),1043
+State,Madhya Pradesh,Penalties & Legal Provisions,General Offences (Section Penalties),1007
+State,Maharashtra,Penalties & Legal Provisions,General Offences (Section Penalties),1564
+State,Manipur,Penalties & Legal Provisions,General Offences (Section Penalties),26
+State,Meghalaya,Penalties & Legal Provisions,General Offences (Section Penalties),68
+State,Mizoram,Penalties & Legal Provisions,General Offences (Section Penalties),15
+State,Nagaland,Penalties & Legal Provisions,General Offences (Section Penalties),5
+State,Odisha,Penalties & Legal Provisions,General Offences (Section Penalties),785
+State,Punjab,Penalties & Legal Provisions,General Offences (Section Penalties),900
+State,Rajasthan,Penalties & Legal Provisions,General Offences (Section Penalties),3826
+State,Sikkim,Penalties & Legal Provisions,General Offences (Section Penalties),10
+State,Tamil Nadu,Penalties & Legal Provisions,General Offences (Section Penalties),334
+State,Telangana,Penalties & Legal Provisions,General Offences (Section Penalties),613
+State,Tripura,Penalties & Legal Provisions,General Offences (Section Penalties),73
+State,Uttar Pradesh,Penalties & Legal Provisions,General Offences (Section Penalties),2701
+State,Uttarakhand,Penalties & Legal Provisions,General Offences (Section Penalties),290
+State,West Bengal,Penalties & Legal Provisions,General Offences (Section Penalties),1001
+UT,Andaman & Nicobar Islands,Penalties & Legal Provisions,General Offences (Section Penalties),10
+UT,Chandigarh,Penalties & Legal Provisions,General Offences (Section Penalties),48
+UT,Dadra & Nagar Haveli,Penalties & Legal Provisions,General Offences (Section Penalties),0
+UT,Daman & Diu,Penalties & Legal Provisions,General Offences (Section Penalties),4
+UT,Delhi,Penalties & Legal Provisions,General Offences (Section Penalties),1176
+UT,Lakshadweep,Penalties & Legal Provisions,General Offences (Section Penalties),0
+UT,Puducherry,Penalties & Legal Provisions,General Offences (Section Penalties),10
+State,Andhra Pradesh,Custodial,Police Personnel,0
+State,Arunachal Pradesh,Custodial,Police Personnel,0
+State,Assam,Custodial,Police Personnel,0
+State,Bihar,Custodial,Police Personnel,0
+State,Chhattisgarh,Custodial,Police Personnel,1
+State,Goa,Custodial,Police Personnel,0
+State,Gujarat,Custodial,Police Personnel,0
+State,Haryana,Custodial,Police Personnel,0
+State,Himachal Pradesh,Custodial,Police Personnel,0
+State,Jammu & Kashmir,Custodial,Police Personnel,0
+State,Jharkhand,Custodial,Police Personnel,0
+State,Karnataka,Custodial,Police Personnel,0
+State,Kerala,Custodial,Police Personnel,0
+State,Madhya Pradesh,Custodial,Police Personnel,3
+State,Maharashtra,Custodial,Police Personnel,0
+State,Manipur,Custodial,Police Personnel,0
+State,Meghalaya,Custodial,Police Personnel,0
+State,Mizoram,Custodial,Police Personnel,0
+State,Nagaland,Custodial,Police Personnel,0
+State,Odisha,Custodial,Police Personnel,0
+State,Punjab,Custodial,Police Personnel,0
+State,Rajasthan,Custodial,Police Personnel,1
+State,Sikkim,Custodial,Police Personnel,0
+State,Tamil Nadu,Custodial,Police Personnel,0
+State,Telangana,Custodial,Police Personnel,0
+State,Tripura,Custodial,Police Personnel,0
+State,Uttar Pradesh,Custodial,Police Personnel,0
+State,Uttarakhand,Custodial,Police Personnel,0
+State,West Bengal,Custodial,Police Personnel,0
+UT,Andaman & Nicobar Islands,Custodial,Police Personnel,0
+UT,Chandigarh,Custodial,Police Personnel,0
+UT,Dadra & Nagar Haveli,Custodial,Police Personnel,0
+UT,Daman & Diu,Custodial,Police Personnel,0
+UT,Delhi,Custodial,Police Personnel,0
+UT,Lakshadweep,Custodial,Police Personnel,0
+UT,Puducherry,Custodial,Police Personnel,0
+State,Andhra Pradesh,Custodial,Public Servant,0
+State,Arunachal Pradesh,Custodial,Public Servant,0
+State,Assam,Custodial,Public Servant,0
+State,Bihar,Custodial,Public Servant,0
+State,Chhattisgarh,Custodial,Public Servant,0
+State,Goa,Custodial,Public Servant,0
+State,Gujarat,Custodial,Public Servant,0
+State,Haryana,Custodial,Public Servant,1
+State,Himachal Pradesh,Custodial,Public Servant,0
+State,Jammu & Kashmir,Custodial,Public Servant,0
+State,Jharkhand,Custodial,Public Servant,0
+State,Karnataka,Custodial,Public Servant,0
+State,Kerala,Custodial,Public Servant,0
+State,Madhya Pradesh,Custodial,Public Servant,1
+State,Maharashtra,Custodial,Public Servant,0
+State,Manipur,Custodial,Public Servant,0
+State,Meghalaya,Custodial,Public Servant,0
+State,Mizoram,Custodial,Public Servant,0
+State,Nagaland,Custodial,Public Servant,0
+State,Odisha,Custodial,Public Servant,0
+State,Punjab,Custodial,Public Servant,0
+State,Rajasthan,Custodial,Public Servant,1
+State,Sikkim,Custodial,Public Servant,0
+State,Tamil Nadu,Custodial,Public Servant,0
+State,Telangana,Custodial,Public Servant,0
+State,Tripura,Custodial,Public Servant,0
+State,Uttar Pradesh,Custodial,Public Servant,10
+State,Uttarakhand,Custodial,Public Servant,0
+State,West Bengal,Custodial,Public Servant,0
+UT,Andaman & Nicobar Islands,Custodial,Public Servant,0
+UT,Chandigarh,Custodial,Public Servant,0
+UT,Dadra & Nagar Haveli,Custodial,Public Servant,0
+UT,Daman & Diu,Custodial,Public Servant,0
+UT,Delhi,Custodial,Public Servant,0
+UT,Lakshadweep,Custodial,Public Servant,0
+UT,Puducherry,Custodial,Public Servant,0
+State,Andhra Pradesh,Custodial,Member of Armed Forces,1
+State,Arunachal Pradesh,Custodial,Member of Armed Forces,0
+State,Assam,Custodial,Member of Armed Forces,0
+State,Bihar,Custodial,Member of Armed Forces,0
+State,Chhattisgarh,Custodial,Member of Armed Forces,0
+State,Goa,Custodial,Member of Armed Forces,0
+State,Gujarat,Custodial,Member of Armed Forces,0
+State,Haryana,Custodial,Member of Armed Forces,0
+State,Himachal Pradesh,Custodial,Member of Armed Forces,0
+State,Jammu & Kashmir,Custodial,Member of Armed Forces,0
+State,Jharkhand,Custodial,Member of Armed Forces,0
+State,Karnataka,Custodial,Member of Armed Forces,0
+State,Kerala,Custodial,Member of Armed Forces,0
+State,Madhya Pradesh,Custodial,Member of Armed Forces,0
+State,Maharashtra,Custodial,Member of Armed Forces,0
+State,Manipur,Custodial,Member of Armed Forces,0
+State,Meghalaya,Custodial,Member of Armed Forces,0
+State,Mizoram,Custodial,Member of Armed Forces,0
+State,Nagaland,Custodial,Member of Armed Forces,0
+State,Odisha,Custodial,Member of Armed Forces,0
+State,Punjab,Custodial,Member of Armed Forces,0
+State,Rajasthan,Custodial,Member of Armed Forces,0
+State,Sikkim,Custodial,Member of Armed Forces,0
+State,Tamil Nadu,Custodial,Member of Armed Forces,0
+State,Telangana,Custodial,Member of Armed Forces,0
+State,Tripura,Custodial,Member of Armed Forces,0
+State,Uttar Pradesh,Custodial,Member of Armed Forces,0
+State,Uttarakhand,Custodial,Member of Armed Forces,0
+State,West Bengal,Custodial,Member of Armed Forces,0
+UT,Andaman & Nicobar Islands,Custodial,Member of Armed Forces,0
+UT,Chandigarh,Custodial,Member of Armed Forces,0
+UT,Dadra & Nagar Haveli,Custodial,Member of Armed Forces,0
+UT,Daman & Diu,Custodial,Member of Armed Forces,0
+UT,Delhi,Custodial,Member of Armed Forces,0
+UT,Lakshadweep,Custodial,Member of Armed Forces,0
+UT,Puducherry,Custodial,Member of Armed Forces,0
+State,Andhra Pradesh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Arunachal Pradesh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Assam,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,11
+State,Bihar,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Chhattisgarh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Goa,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Gujarat,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Haryana,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Himachal Pradesh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Jammu & Kashmir,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Jharkhand,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Karnataka,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Kerala,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Madhya Pradesh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,1
+State,Maharashtra,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Manipur,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Meghalaya,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Mizoram,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Nagaland,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Odisha,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Punjab,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Rajasthan,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Sikkim,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Tamil Nadu,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Telangana,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Tripura,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Uttar Pradesh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,12
+State,Uttarakhand,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,West Bengal,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Andaman & Nicobar Islands,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Chandigarh,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Dadra & Nagar Haveli,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Daman & Diu,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Delhi,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Lakshadweep,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+UT,Puducherry,Custodial,Management/Staff of Jail/Remand Home/Place of Custody,0
+State,Andhra Pradesh,Custodial,Management/ Staff of Hospital,0
+State,Arunachal Pradesh,Custodial,Management/ Staff of Hospital,0
+State,Assam,Custodial,Management/ Staff of Hospital,0
+State,Bihar,Custodial,Management/ Staff of Hospital,0
+State,Chhattisgarh,Custodial,Management/ Staff of Hospital,0
+State,Goa,Custodial,Management/ Staff of Hospital,1
+State,Gujarat,Custodial,Management/ Staff of Hospital,0
+State,Haryana,Custodial,Management/ Staff of Hospital,1
+State,Himachal Pradesh,Custodial,Management/ Staff of Hospital,0
+State,Jammu & Kashmir,Custodial,Management/ Staff of Hospital,0
+State,Jharkhand,Custodial,Management/ Staff of Hospital,0
+State,Karnataka,Custodial,Management/ Staff of Hospital,0
+State,Kerala,Custodial,Management/ Staff of Hospital,0
+State,Madhya Pradesh,Custodial,Management/ Staff of Hospital,1
+State,Maharashtra,Custodial,Management/ Staff of Hospital,0
+State,Manipur,Custodial,Management/ Staff of Hospital,0
+State,Meghalaya,Custodial,Management/ Staff of Hospital,0
+State,Mizoram,Custodial,Management/ Staff of Hospital,0
+State,Nagaland,Custodial,Management/ Staff of Hospital,0
+State,Odisha,Custodial,Management/ Staff of Hospital,0
+State,Punjab,Custodial,Management/ Staff of Hospital,0
+State,Rajasthan,Custodial,Management/ Staff of Hospital,0
+State,Sikkim,Custodial,Management/ Staff of Hospital,0
+State,Tamil Nadu,Custodial,Management/ Staff of Hospital,0
+State,Telangana,Custodial,Management/ Staff of Hospital,1
+State,Tripura,Custodial,Management/ Staff of Hospital,0
+State,Uttar Pradesh,Custodial,Management/ Staff of Hospital,0
+State,Uttarakhand,Custodial,Management/ Staff of Hospital,0
+State,West Bengal,Custodial,Management/ Staff of Hospital,0
+UT,Andaman & Nicobar Islands,Custodial,Management/ Staff of Hospital,0
+UT,Chandigarh,Custodial,Management/ Staff of Hospital,0
+UT,Dadra & Nagar Haveli,Custodial,Management/ Staff of Hospital,0
+UT,Daman & Diu,Custodial,Management/ Staff of Hospital,0
+UT,Delhi,Custodial,Management/ Staff of Hospital,0
+UT,Lakshadweep,Custodial,Management/ Staff of Hospital,0
+UT,Puducherry,Custodial,Management/ Staff of Hospital,0
+State,Andhra Pradesh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,17
+State,Arunachal Pradesh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,4
+State,Assam,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,31
+State,Bihar,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,16
+State,Chhattisgarh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,267
+State,Goa,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,6
+State,Gujarat,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,14
+State,Haryana,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,11
+State,Himachal Pradesh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,26
+State,Jammu & Kashmir,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,46
+State,Jharkhand,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+State,Karnataka,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,8
+State,Kerala,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,204
+State,Madhya Pradesh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,140
+State,Maharashtra,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,89
+State,Manipur,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,4
+State,Meghalaya,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,2
+State,Mizoram,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,3
+State,Nagaland,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+State,Odisha,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,424
+State,Punjab,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,8
+State,Rajasthan,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,481
+State,Sikkim,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+State,Tamil Nadu,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,14
+State,Telangana,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,9
+State,Tripura,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+State,Uttar Pradesh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,27
+State,Uttarakhand,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,143
+State,West Bengal,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+UT,Andaman & Nicobar Islands,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+UT,Chandigarh,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+UT,Daman & Diu,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+UT,Delhi,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,5
+UT,Lakshadweep,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+UT,Puducherry,Non-Custodial,Relative/Guardian/Teacher/person in position of trust,0
+State,Andhra Pradesh,Non-Custodial,Pregnant Women,0
+State,Arunachal Pradesh,Non-Custodial,Pregnant Women,0
+State,Assam,Non-Custodial,Pregnant Women,0
+State,Bihar,Non-Custodial,Pregnant Women,0
+State,Chhattisgarh,Non-Custodial,Pregnant Women,2
+State,Goa,Non-Custodial,Pregnant Women,0
+State,Gujarat,Non-Custodial,Pregnant Women,1
+State,Haryana,Non-Custodial,Pregnant Women,4
+State,Himachal Pradesh,Non-Custodial,Pregnant Women,0
+State,Jammu & Kashmir,Non-Custodial,Pregnant Women,0
+State,Jharkhand,Non-Custodial,Pregnant Women,0
+State,Karnataka,Non-Custodial,Pregnant Women,0
+State,Kerala,Non-Custodial,Pregnant Women,1
+State,Madhya Pradesh,Non-Custodial,Pregnant Women,11
+State,Maharashtra,Non-Custodial,Pregnant Women,6
+State,Manipur,Non-Custodial,Pregnant Women,0
+State,Meghalaya,Non-Custodial,Pregnant Women,0
+State,Mizoram,Non-Custodial,Pregnant Women,0
+State,Nagaland,Non-Custodial,Pregnant Women,0
+State,Odisha,Non-Custodial,Pregnant Women,0
+State,Punjab,Non-Custodial,Pregnant Women,0
+State,Rajasthan,Non-Custodial,Pregnant Women,3
+State,Sikkim,Non-Custodial,Pregnant Women,0
+State,Tamil Nadu,Non-Custodial,Pregnant Women,0
+State,Telangana,Non-Custodial,Pregnant Women,6
+State,Tripura,Non-Custodial,Pregnant Women,0
+State,Uttar Pradesh,Non-Custodial,Pregnant Women,0
+State,Uttarakhand,Non-Custodial,Pregnant Women,1
+State,West Bengal,Non-Custodial,Pregnant Women,0
+UT,Andaman & Nicobar Islands,Non-Custodial,Pregnant Women,0
+UT,Chandigarh,Non-Custodial,Pregnant Women,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Pregnant Women,0
+UT,Daman & Diu,Non-Custodial,Pregnant Women,0
+UT,Delhi,Non-Custodial,Pregnant Women,0
+UT,Lakshadweep,Non-Custodial,Pregnant Women,0
+UT,Puducherry,Non-Custodial,Pregnant Women,0
+State,Andhra Pradesh,Non-Custodial,Women Below 16 years of age,101
+State,Arunachal Pradesh,Non-Custodial,Women Below 16 years of age,4
+State,Assam,Non-Custodial,Women Below 16 years of age,1
+State,Bihar,Non-Custodial,Women Below 16 years of age,0
+State,Chhattisgarh,Non-Custodial,Women Below 16 years of age,77
+State,Goa,Non-Custodial,Women Below 16 years of age,7
+State,Gujarat,Non-Custodial,Women Below 16 years of age,0
+State,Haryana,Non-Custodial,Women Below 16 years of age,0
+State,Himachal Pradesh,Non-Custodial,Women Below 16 years of age,23
+State,Jammu & Kashmir,Non-Custodial,Women Below 16 years of age,0
+State,Jharkhand,Non-Custodial,Women Below 16 years of age,31
+State,Karnataka,Non-Custodial,Women Below 16 years of age,0
+State,Kerala,Non-Custodial,Women Below 16 years of age,203
+State,Madhya Pradesh,Non-Custodial,Women Below 16 years of age,73
+State,Maharashtra,Non-Custodial,Women Below 16 years of age,54
+State,Manipur,Non-Custodial,Women Below 16 years of age,6
+State,Meghalaya,Non-Custodial,Women Below 16 years of age,20
+State,Mizoram,Non-Custodial,Women Below 16 years of age,0
+State,Nagaland,Non-Custodial,Women Below 16 years of age,0
+State,Odisha,Non-Custodial,Women Below 16 years of age,9
+State,Punjab,Non-Custodial,Women Below 16 years of age,22
+State,Rajasthan,Non-Custodial,Women Below 16 years of age,124
+State,Sikkim,Non-Custodial,Women Below 16 years of age,0
+State,Tamil Nadu,Non-Custodial,Women Below 16 years of age,0
+State,Telangana,Non-Custodial,Women Below 16 years of age,2
+State,Tripura,Non-Custodial,Women Below 16 years of age,0
+State,Uttar Pradesh,Non-Custodial,Women Below 16 years of age,0
+State,Uttarakhand,Non-Custodial,Women Below 16 years of age,33
+State,West Bengal,Non-Custodial,Women Below 16 years of age,0
+UT,Andaman & Nicobar Islands,Non-Custodial,Women Below 16 years of age,0
+UT,Chandigarh,Non-Custodial,Women Below 16 years of age,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Women Below 16 years of age,0
+UT,Daman & Diu,Non-Custodial,Women Below 16 years of age,0
+UT,Delhi,Non-Custodial,Women Below 16 years of age,0
+UT,Lakshadweep,Non-Custodial,Women Below 16 years of age,0
+UT,Puducherry,Non-Custodial,Women Below 16 years of age,0
+State,Andhra Pradesh,Non-Custodial,Women Incapable of giving Consent,12
+State,Arunachal Pradesh,Non-Custodial,Women Incapable of giving Consent,0
+State,Assam,Non-Custodial,Women Incapable of giving Consent,21
+State,Bihar,Non-Custodial,Women Incapable of giving Consent,0
+State,Chhattisgarh,Non-Custodial,Women Incapable of giving Consent,35
+State,Goa,Non-Custodial,Women Incapable of giving Consent,0
+State,Gujarat,Non-Custodial,Women Incapable of giving Consent,0
+State,Haryana,Non-Custodial,Women Incapable of giving Consent,0
+State,Himachal Pradesh,Non-Custodial,Women Incapable of giving Consent,0
+State,Jammu & Kashmir,Non-Custodial,Women Incapable of giving Consent,0
+State,Jharkhand,Non-Custodial,Women Incapable of giving Consent,0
+State,Karnataka,Non-Custodial,Women Incapable of giving Consent,0
+State,Kerala,Non-Custodial,Women Incapable of giving Consent,19
+State,Madhya Pradesh,Non-Custodial,Women Incapable of giving Consent,26
+State,Maharashtra,Non-Custodial,Women Incapable of giving Consent,23
+State,Manipur,Non-Custodial,Women Incapable of giving Consent,0
+State,Meghalaya,Non-Custodial,Women Incapable of giving Consent,0
+State,Mizoram,Non-Custodial,Women Incapable of giving Consent,0
+State,Nagaland,Non-Custodial,Women Incapable of giving Consent,0
+State,Odisha,Non-Custodial,Women Incapable of giving Consent,1
+State,Punjab,Non-Custodial,Women Incapable of giving Consent,0
+State,Rajasthan,Non-Custodial,Women Incapable of giving Consent,216
+State,Sikkim,Non-Custodial,Women Incapable of giving Consent,0
+State,Tamil Nadu,Non-Custodial,Women Incapable of giving Consent,0
+State,Telangana,Non-Custodial,Women Incapable of giving Consent,40
+State,Tripura,Non-Custodial,Women Incapable of giving Consent,0
+State,Uttar Pradesh,Non-Custodial,Women Incapable of giving Consent,0
+State,Uttarakhand,Non-Custodial,Women Incapable of giving Consent,0
+State,West Bengal,Non-Custodial,Women Incapable of giving Consent,0
+UT,Andaman & Nicobar Islands,Non-Custodial,Women Incapable of giving Consent,0
+UT,Chandigarh,Non-Custodial,Women Incapable of giving Consent,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Women Incapable of giving Consent,0
+UT,Daman & Diu,Non-Custodial,Women Incapable of giving Consent,0
+UT,Delhi,Non-Custodial,Women Incapable of giving Consent,0
+UT,Lakshadweep,Non-Custodial,Women Incapable of giving Consent,0
+UT,Puducherry,Non-Custodial,Women Incapable of giving Consent,0
+State,Andhra Pradesh,Non-Custodial,Persons in Control or Dominance over women,2
+State,Arunachal Pradesh,Non-Custodial,Persons in Control or Dominance over women,0
+State,Assam,Non-Custodial,Persons in Control or Dominance over women,36
+State,Bihar,Non-Custodial,Persons in Control or Dominance over women,0
+State,Chhattisgarh,Non-Custodial,Persons in Control or Dominance over women,1
+State,Goa,Non-Custodial,Persons in Control or Dominance over women,0
+State,Gujarat,Non-Custodial,Persons in Control or Dominance over women,1
+State,Haryana,Non-Custodial,Persons in Control or Dominance over women,0
+State,Himachal Pradesh,Non-Custodial,Persons in Control or Dominance over women,0
+State,Jammu & Kashmir,Non-Custodial,Persons in Control or Dominance over women,0
+State,Jharkhand,Non-Custodial,Persons in Control or Dominance over women,0
+State,Karnataka,Non-Custodial,Persons in Control or Dominance over women,0
+State,Kerala,Non-Custodial,Persons in Control or Dominance over women,5
+State,Madhya Pradesh,Non-Custodial,Persons in Control or Dominance over women,12
+State,Maharashtra,Non-Custodial,Persons in Control or Dominance over women,3
+State,Manipur,Non-Custodial,Persons in Control or Dominance over women,0
+State,Meghalaya,Non-Custodial,Persons in Control or Dominance over women,1
+State,Mizoram,Non-Custodial,Persons in Control or Dominance over women,1
+State,Nagaland,Non-Custodial,Persons in Control or Dominance over women,0
+State,Odisha,Non-Custodial,Persons in Control or Dominance over women,1
+State,Punjab,Non-Custodial,Persons in Control or Dominance over women,0
+State,Rajasthan,Non-Custodial,Persons in Control or Dominance over women,118
+State,Sikkim,Non-Custodial,Persons in Control or Dominance over women,0
+State,Tamil Nadu,Non-Custodial,Persons in Control or Dominance over women,1
+State,Telangana,Non-Custodial,Persons in Control or Dominance over women,0
+State,Tripura,Non-Custodial,Persons in Control or Dominance over women,0
+State,Uttar Pradesh,Non-Custodial,Persons in Control or Dominance over women,0
+State,Uttarakhand,Non-Custodial,Persons in Control or Dominance over women,0
+State,West Bengal,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Andaman & Nicobar Islands,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Chandigarh,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Daman & Diu,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Delhi,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Lakshadweep,Non-Custodial,Persons in Control or Dominance over women,0
+UT,Puducherry,Non-Custodial,Persons in Control or Dominance over women,0
+State,Andhra Pradesh,Non-Custodial,Women with Mental or Physical disability,8
+State,Arunachal Pradesh,Non-Custodial,Women with Mental or Physical disability,2
+State,Assam,Non-Custodial,Women with Mental or Physical disability,1
+State,Bihar,Non-Custodial,Women with Mental or Physical disability,0
+State,Chhattisgarh,Non-Custodial,Women with Mental or Physical disability,4
+State,Goa,Non-Custodial,Women with Mental or Physical disability,0
+State,Gujarat,Non-Custodial,Women with Mental or Physical disability,4
+State,Haryana,Non-Custodial,Women with Mental or Physical disability,0
+State,Himachal Pradesh,Non-Custodial,Women with Mental or Physical disability,0
+State,Jammu & Kashmir,Non-Custodial,Women with Mental or Physical disability,0
+State,Jharkhand,Non-Custodial,Women with Mental or Physical disability,0
+State,Karnataka,Non-Custodial,Women with Mental or Physical disability,5
+State,Kerala,Non-Custodial,Women with Mental or Physical disability,17
+State,Madhya Pradesh,Non-Custodial,Women with Mental or Physical disability,17
+State,Maharashtra,Non-Custodial,Women with Mental or Physical disability,29
+State,Manipur,Non-Custodial,Women with Mental or Physical disability,0
+State,Meghalaya,Non-Custodial,Women with Mental or Physical disability,2
+State,Mizoram,Non-Custodial,Women with Mental or Physical disability,1
+State,Nagaland,Non-Custodial,Women with Mental or Physical disability,0
+State,Odisha,Non-Custodial,Women with Mental or Physical disability,0
+State,Punjab,Non-Custodial,Women with Mental or Physical disability,3
+State,Rajasthan,Non-Custodial,Women with Mental or Physical disability,2
+State,Sikkim,Non-Custodial,Women with Mental or Physical disability,0
+State,Tamil Nadu,Non-Custodial,Women with Mental or Physical disability,3
+State,Telangana,Non-Custodial,Women with Mental or Physical disability,10
+State,Tripura,Non-Custodial,Women with Mental or Physical disability,0
+State,Uttar Pradesh,Non-Custodial,Women with Mental or Physical disability,0
+State,Uttarakhand,Non-Custodial,Women with Mental or Physical disability,0
+State,West Bengal,Non-Custodial,Women with Mental or Physical disability,7
+UT,Andaman & Nicobar Islands,Non-Custodial,Women with Mental or Physical disability,0
+UT,Chandigarh,Non-Custodial,Women with Mental or Physical disability,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Women with Mental or Physical disability,0
+UT,Daman & Diu,Non-Custodial,Women with Mental or Physical disability,0
+UT,Delhi,Non-Custodial,Women with Mental or Physical disability,1
+UT,Lakshadweep,Non-Custodial,Women with Mental or Physical disability,0
+UT,Puducherry,Non-Custodial,Women with Mental or Physical disability,0
+State,Andhra Pradesh,Non-Custodial,Endanger life of Women,0
+State,Arunachal Pradesh,Non-Custodial,Endanger life of Women,0
+State,Assam,Non-Custodial,Endanger life of Women,0
+State,Bihar,Non-Custodial,Endanger life of Women,0
+State,Chhattisgarh,Non-Custodial,Endanger life of Women,3
+State,Goa,Non-Custodial,Endanger life of Women,0
+State,Gujarat,Non-Custodial,Endanger life of Women,2
+State,Haryana,Non-Custodial,Endanger life of Women,0
+State,Himachal Pradesh,Non-Custodial,Endanger life of Women,0
+State,Jammu & Kashmir,Non-Custodial,Endanger life of Women,0
+State,Jharkhand,Non-Custodial,Endanger life of Women,0
+State,Karnataka,Non-Custodial,Endanger life of Women,1
+State,Kerala,Non-Custodial,Endanger life of Women,4
+State,Madhya Pradesh,Non-Custodial,Endanger life of Women,11
+State,Maharashtra,Non-Custodial,Endanger life of Women,3
+State,Manipur,Non-Custodial,Endanger life of Women,0
+State,Meghalaya,Non-Custodial,Endanger life of Women,2
+State,Mizoram,Non-Custodial,Endanger life of Women,0
+State,Nagaland,Non-Custodial,Endanger life of Women,0
+State,Odisha,Non-Custodial,Endanger life of Women,0
+State,Punjab,Non-Custodial,Endanger life of Women,0
+State,Rajasthan,Non-Custodial,Endanger life of Women,6
+State,Sikkim,Non-Custodial,Endanger life of Women,0
+State,Tamil Nadu,Non-Custodial,Endanger life of Women,0
+State,Telangana,Non-Custodial,Endanger life of Women,1
+State,Tripura,Non-Custodial,Endanger life of Women,0
+State,Uttar Pradesh,Non-Custodial,Endanger life of Women,0
+State,Uttarakhand,Non-Custodial,Endanger life of Women,0
+State,West Bengal,Non-Custodial,Endanger life of Women,1
+UT,Andaman & Nicobar Islands,Non-Custodial,Endanger life of Women,0
+UT,Chandigarh,Non-Custodial,Endanger life of Women,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Endanger life of Women,0
+UT,Daman & Diu,Non-Custodial,Endanger life of Women,0
+UT,Delhi,Non-Custodial,Endanger life of Women,0
+UT,Lakshadweep,Non-Custodial,Endanger life of Women,0
+UT,Puducherry,Non-Custodial,Endanger life of Women,0
+State,Andhra Pradesh,Non-Custodial,Repeated on same women,98
+State,Arunachal Pradesh,Non-Custodial,Repeated on same women,2
+State,Assam,Non-Custodial,Repeated on same women,0
+State,Bihar,Non-Custodial,Repeated on same women,0
+State,Chhattisgarh,Non-Custodial,Repeated on same women,31
+State,Goa,Non-Custodial,Repeated on same women,1
+State,Gujarat,Non-Custodial,Repeated on same women,62
+State,Haryana,Non-Custodial,Repeated on same women,308
+State,Himachal Pradesh,Non-Custodial,Repeated on same women,1
+State,Jammu & Kashmir,Non-Custodial,Repeated on same women,0
+State,Jharkhand,Non-Custodial,Repeated on same women,25
+State,Karnataka,Non-Custodial,Repeated on same women,13
+State,Kerala,Non-Custodial,Repeated on same women,318
+State,Madhya Pradesh,Non-Custodial,Repeated on same women,748
+State,Maharashtra,Non-Custodial,Repeated on same women,343
+State,Manipur,Non-Custodial,Repeated on same women,0
+State,Meghalaya,Non-Custodial,Repeated on same women,0
+State,Mizoram,Non-Custodial,Repeated on same women,0
+State,Nagaland,Non-Custodial,Repeated on same women,0
+State,Odisha,Non-Custodial,Repeated on same women,72
+State,Punjab,Non-Custodial,Repeated on same women,5
+State,Rajasthan,Non-Custodial,Repeated on same women,160
+State,Sikkim,Non-Custodial,Repeated on same women,0
+State,Tamil Nadu,Non-Custodial,Repeated on same women,0
+State,Telangana,Non-Custodial,Repeated on same women,132
+State,Tripura,Non-Custodial,Repeated on same women,2
+State,Uttar Pradesh,Non-Custodial,Repeated on same women,0
+State,Uttarakhand,Non-Custodial,Repeated on same women,21
+State,West Bengal,Non-Custodial,Repeated on same women,4
+UT,Andaman & Nicobar Islands,Non-Custodial,Repeated on same women,0
+UT,Chandigarh,Non-Custodial,Repeated on same women,12
+UT,Dadra & Nagar Haveli,Non-Custodial,Repeated on same women,0
+UT,Daman & Diu,Non-Custodial,Repeated on same women,0
+UT,Delhi,Non-Custodial,Repeated on same women,15
+UT,Lakshadweep,Non-Custodial,Repeated on same women,0
+UT,Puducherry,Non-Custodial,Repeated on same women,0
+State,Andhra Pradesh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),15
+State,Arunachal Pradesh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Assam,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Bihar,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Chhattisgarh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Goa,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),1
+State,Gujarat,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Haryana,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Himachal Pradesh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),2
+State,Jammu & Kashmir,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Jharkhand,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),11
+State,Karnataka,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),1
+State,Kerala,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),35
+State,Madhya Pradesh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),6
+State,Maharashtra,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),4
+State,Manipur,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Meghalaya,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Mizoram,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),5
+State,Nagaland,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Odisha,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),37
+State,Punjab,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),9
+State,Rajasthan,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),14
+State,Sikkim,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Tamil Nadu,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Telangana,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),1
+State,Tripura,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Uttar Pradesh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Uttarakhand,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),19
+State,West Bengal,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+UT,Andaman & Nicobar Islands,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),1
+UT,Chandigarh,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),18
+UT,Dadra & Nagar Haveli,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+UT,Daman & Diu,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+UT,Delhi,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),2
+UT,Lakshadweep,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+UT,Puducherry,Penalties & Legal Provisions,Punishment upto 20 years extended to life (Below 16 Yrs),0
+State,Andhra Pradesh,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Arunachal Pradesh,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Assam,Penalties & Legal Provisions,Punishment for causing Death,1
+State,Bihar,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Chhattisgarh,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Goa,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Gujarat,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Haryana,Penalties & Legal Provisions,Punishment for causing Death,2
+State,Himachal Pradesh,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Jammu & Kashmir,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Jharkhand,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Karnataka,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Kerala,Penalties & Legal Provisions,Punishment for causing Death,1
+State,Madhya Pradesh,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Maharashtra,Penalties & Legal Provisions,Punishment for causing Death,10
+State,Manipur,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Meghalaya,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Mizoram,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Nagaland,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Odisha,Penalties & Legal Provisions,Punishment for causing Death,11
+State,Punjab,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Rajasthan,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Sikkim,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Tamil Nadu,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Telangana,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Tripura,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Uttar Pradesh,Penalties & Legal Provisions,Punishment for causing Death,1
+State,Uttarakhand,Penalties & Legal Provisions,Punishment for causing Death,0
+State,West Bengal,Penalties & Legal Provisions,Punishment for causing Death,0
+UT,Andaman & Nicobar Islands,Penalties & Legal Provisions,Punishment for causing Death,0
+UT,Chandigarh,Penalties & Legal Provisions,Punishment for causing Death,0
+UT,Dadra & Nagar Haveli,Penalties & Legal Provisions,Punishment for causing Death,0
+UT,Daman & Diu,Penalties & Legal Provisions,Punishment for causing Death,0
+UT,Delhi,Penalties & Legal Provisions,Punishment for causing Death,1
+UT,Lakshadweep,Penalties & Legal Provisions,Punishment for causing Death,0
+UT,Puducherry,Penalties & Legal Provisions,Punishment for causing Death,0
+State,Andhra Pradesh,Penalties & Legal Provisions,Separated husband,0
+State,Arunachal Pradesh,Penalties & Legal Provisions,Separated husband,1
+State,Assam,Penalties & Legal Provisions,Separated husband,1
+State,Bihar,Penalties & Legal Provisions,Separated husband,0
+State,Chhattisgarh,Penalties & Legal Provisions,Separated husband,0
+State,Goa,Penalties & Legal Provisions,Separated husband,0
+State,Gujarat,Penalties & Legal Provisions,Separated husband,0
+State,Haryana,Penalties & Legal Provisions,Separated husband,4
+State,Himachal Pradesh,Penalties & Legal Provisions,Separated husband,0
+State,Jammu & Kashmir,Penalties & Legal Provisions,Separated husband,0
+State,Jharkhand,Penalties & Legal Provisions,Separated husband,0
+State,Karnataka,Penalties & Legal Provisions,Separated husband,0
+State,Kerala,Penalties & Legal Provisions,Separated husband,0
+State,Madhya Pradesh,Penalties & Legal Provisions,Separated husband,6
+State,Maharashtra,Penalties & Legal Provisions,Separated husband,7
+State,Manipur,Penalties & Legal Provisions,Separated husband,0
+State,Meghalaya,Penalties & Legal Provisions,Separated husband,1
+State,Mizoram,Penalties & Legal Provisions,Separated husband,0
+State,Nagaland,Penalties & Legal Provisions,Separated husband,0
+State,Odisha,Penalties & Legal Provisions,Separated husband,3
+State,Punjab,Penalties & Legal Provisions,Separated husband,0
+State,Rajasthan,Penalties & Legal Provisions,Separated husband,5
+State,Sikkim,Penalties & Legal Provisions,Separated husband,0
+State,Tamil Nadu,Penalties & Legal Provisions,Separated husband,1
+State,Telangana,Penalties & Legal Provisions,Separated husband,1
+State,Tripura,Penalties & Legal Provisions,Separated husband,0
+State,Uttar Pradesh,Penalties & Legal Provisions,Separated husband,2
+State,Uttarakhand,Penalties & Legal Provisions,Separated husband,0
+State,West Bengal,Penalties & Legal Provisions,Separated husband,0
+UT,Andaman & Nicobar Islands,Penalties & Legal Provisions,Separated husband,0
+UT,Chandigarh,Penalties & Legal Provisions,Separated husband,2
+UT,Dadra & Nagar Haveli,Penalties & Legal Provisions,Separated husband,0
+UT,Daman & Diu,Penalties & Legal Provisions,Separated husband,0
+UT,Delhi,Penalties & Legal Provisions,Separated husband,3
+UT,Lakshadweep,Penalties & Legal Provisions,Separated husband,0
+UT,Puducherry,Penalties & Legal Provisions,Separated husband,0
+State,Andhra Pradesh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),10
+State,Arunachal Pradesh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Assam,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),1
+State,Bihar,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Chhattisgarh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),3
+State,Goa,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Gujarat,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Haryana,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Himachal Pradesh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),1
+State,Jammu & Kashmir,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Jharkhand,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),4
+State,Karnataka,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Kerala,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),71
+State,Madhya Pradesh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),10
+State,Maharashtra,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),8
+State,Manipur,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Meghalaya,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Mizoram,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),13
+State,Nagaland,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Odisha,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),6
+State,Punjab,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),8
+State,Rajasthan,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),11
+State,Sikkim,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Tamil Nadu,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),7
+State,Telangana,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Tripura,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Uttar Pradesh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Uttarakhand,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),6
+State,West Bengal,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+UT,Andaman & Nicobar Islands,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),1
+UT,Chandigarh,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),10
+UT,Dadra & Nagar Haveli,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+UT,Daman & Diu,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+UT,Delhi,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+UT,Lakshadweep,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+UT,Puducherry,Aggravated & Gang,Girl Below 16 Yrs (Imprisonment for life till death),0
+State,Andhra Pradesh,Non-Custodial,Person in Authority,1
+State,Arunachal Pradesh,Non-Custodial,Person in Authority,0
+State,Assam,Non-Custodial,Person in Authority,30
+State,Bihar,Non-Custodial,Person in Authority,0
+State,Chhattisgarh,Non-Custodial,Person in Authority,0
+State,Goa,Non-Custodial,Person in Authority,0
+State,Gujarat,Non-Custodial,Person in Authority,0
+State,Haryana,Non-Custodial,Person in Authority,1
+State,Himachal Pradesh,Non-Custodial,Person in Authority,0
+State,Jammu & Kashmir,Non-Custodial,Person in Authority,0
+State,Jharkhand,Non-Custodial,Person in Authority,2
+State,Karnataka,Non-Custodial,Person in Authority,0
+State,Kerala,Non-Custodial,Person in Authority,2
+State,Madhya Pradesh,Non-Custodial,Person in Authority,3
+State,Maharashtra,Non-Custodial,Person in Authority,2
+State,Manipur,Non-Custodial,Person in Authority,0
+State,Meghalaya,Non-Custodial,Person in Authority,0
+State,Mizoram,Non-Custodial,Person in Authority,0
+State,Nagaland,Non-Custodial,Person in Authority,0
+State,Odisha,Non-Custodial,Person in Authority,1
+State,Punjab,Non-Custodial,Person in Authority,0
+State,Rajasthan,Non-Custodial,Person in Authority,1
+State,Sikkim,Non-Custodial,Person in Authority,0
+State,Tamil Nadu,Non-Custodial,Person in Authority,0
+State,Telangana,Non-Custodial,Person in Authority,0
+State,Tripura,Non-Custodial,Person in Authority,0
+State,Uttar Pradesh,Non-Custodial,Person in Authority,0
+State,Uttarakhand,Non-Custodial,Person in Authority,0
+State,West Bengal,Non-Custodial,Person in Authority,1
+UT,Andaman & Nicobar Islands,Non-Custodial,Person in Authority,0
+UT,Chandigarh,Non-Custodial,Person in Authority,0
+UT,Dadra & Nagar Haveli,Non-Custodial,Person in Authority,0
+UT,Daman & Diu,Non-Custodial,Person in Authority,0
+UT,Delhi,Non-Custodial,Person in Authority,0
+UT,Lakshadweep,Non-Custodial,Person in Authority,0
+UT,Puducherry,Non-Custodial,Person in Authority,0
+State,Andhra Pradesh,Aggravated & Gang,Gang Incidents,9
+State,Arunachal Pradesh,Aggravated & Gang,Gang Incidents,4
+State,Assam,Aggravated & Gang,Gang Incidents,25
+State,Bihar,Aggravated & Gang,Gang Incidents,14
+State,Chhattisgarh,Aggravated & Gang,Gang Incidents,15
+State,Goa,Aggravated & Gang,Gang Incidents,2
+State,Gujarat,Aggravated & Gang,Gang Incidents,14
+State,Haryana,Aggravated & Gang,Gang Incidents,159
+State,Himachal Pradesh,Aggravated & Gang,Gang Incidents,4
+State,Jammu & Kashmir,Aggravated & Gang,Gang Incidents,0
+State,Jharkhand,Aggravated & Gang,Gang Incidents,52
+State,Karnataka,Aggravated & Gang,Gang Incidents,7
+State,Kerala,Aggravated & Gang,Gang Incidents,7
+State,Madhya Pradesh,Aggravated & Gang,Gang Incidents,162
+State,Maharashtra,Aggravated & Gang,Gang Incidents,63
+State,Manipur,Aggravated & Gang,Gang Incidents,0
+State,Meghalaya,Aggravated & Gang,Gang Incidents,5
+State,Mizoram,Aggravated & Gang,Gang Incidents,1
+State,Nagaland,Aggravated & Gang,Gang Incidents,0
+State,Odisha,Aggravated & Gang,Gang Incidents,22
+State,Punjab,Aggravated & Gang,Gang Incidents,29
+State,Rajasthan,Aggravated & Gang,Gang Incidents,902
+State,Sikkim,Aggravated & Gang,Gang Incidents,1
+State,Tamil Nadu,Aggravated & Gang,Gang Incidents,1
+State,Telangana,Aggravated & Gang,Gang Incidents,14
+State,Tripura,Aggravated & Gang,Gang Incidents,6
+State,Uttar Pradesh,Aggravated & Gang,Gang Incidents,301
+State,Uttarakhand,Aggravated & Gang,Gang Incidents,9
+State,West Bengal,Aggravated & Gang,Gang Incidents,55
+UT,Andaman & Nicobar Islands,Aggravated & Gang,Gang Incidents,0
+UT,Chandigarh,Aggravated & Gang,Gang Incidents,1
+UT,Dadra & Nagar Haveli,Aggravated & Gang,Gang Incidents,0
+UT,Daman & Diu,Aggravated & Gang,Gang Incidents,0
+UT,Delhi,Aggravated & Gang,Gang Incidents,47
+UT,Lakshadweep,Aggravated & Gang,Gang Incidents,0
+UT,Puducherry,Aggravated & Gang,Gang Incidents,0
+State,Andhra Pradesh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),2
+State,Arunachal Pradesh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Assam,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Bihar,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Chhattisgarh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Goa,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Gujarat,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Haryana,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Himachal Pradesh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Jammu & Kashmir,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Jharkhand,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),1
+State,Karnataka,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Kerala,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),3
+State,Madhya Pradesh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),1
+State,Maharashtra,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Manipur,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Meghalaya,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Mizoram,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Nagaland,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Odisha,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Punjab,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),2
+State,Rajasthan,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),31
+State,Sikkim,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Tamil Nadu,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Telangana,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Tripura,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Uttar Pradesh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Uttarakhand,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),4
+State,West Bengal,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+UT,Andaman & Nicobar Islands,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),1
+UT,Chandigarh,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),2
+UT,Dadra & Nagar Haveli,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+UT,Daman & Diu,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+UT,Delhi,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+UT,Lakshadweep,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+UT,Puducherry,Aggravated & Gang,Girl Below 12 Yrs (Imprisonment for life till death),0
+State,Andhra Pradesh,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Arunachal Pradesh,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Assam,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Bihar,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Chhattisgarh,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Goa,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Gujarat,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Haryana,Penalties & Legal Provisions,Punishment for Repeat offenders,49
+State,Himachal Pradesh,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Jammu & Kashmir,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Jharkhand,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Karnataka,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Kerala,Penalties & Legal Provisions,Punishment for Repeat offenders,1
+State,Madhya Pradesh,Penalties & Legal Provisions,Punishment for Repeat offenders,52
+State,Maharashtra,Penalties & Legal Provisions,Punishment for Repeat offenders,1
+State,Manipur,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Meghalaya,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Mizoram,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Nagaland,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Odisha,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Punjab,Penalties & Legal Provisions,Punishment for Repeat offenders,1
+State,Rajasthan,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Sikkim,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Tamil Nadu,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Telangana,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Tripura,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Uttar Pradesh,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,Uttarakhand,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+State,West Bengal,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Andaman & Nicobar Islands,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Chandigarh,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Dadra & Nagar Haveli,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Daman & Diu,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Delhi,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Lakshadweep,Penalties & Legal Provisions,Punishment for Repeat offenders,0
+UT,Puducherry,Penalties & Legal Provisions,Punishment for Repeat offenders,0
