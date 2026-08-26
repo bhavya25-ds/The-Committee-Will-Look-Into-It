@@ -495,6 +495,76 @@ def shorten_crime_categories(df: pd.DataFrame, col_name: str) -> pd.DataFrame:
 
 
 
+def optimize_crime_df(df, id_cols=["Category", "State/UT"], value_name="Incidents"):
+    """
+    Transforms wide offense DataFrame into an optimized long format with
+    clean categories and subcategories.
+    """
+    # 1. Identify value columns to unpivot
+    metric_cols = [col for col in df.columns if col not in id_cols]
+    
+    # 2. Melt from wide to long
+    long_df = df.melt(
+        id_vars=id_cols,
+        value_vars=metric_cols,
+        var_name="raw_metric",
+        value_name=value_name
+    )
+    
+    # 3. Parse category and clean subcategory labels
+    def parse_metric(metric_name):
+        text = re.sub(r'\s+', ' ', str(metric_name)).strip()
+        
+        # High-level classification
+        if "Custody" in text:
+            category = "Custodial"
+        elif any(k in text for k in ["Gang", "Below 12 Yrs", "Below 16 Yrs (Imprisonment"]):
+            category = "Aggravated & Gang"
+        elif any(k in text for k in ["Punishment", "husband"]):
+            category = "Penalties & Legal Provisions"
+        else:
+            category = "Non-Custodial"
+            
+        # Strip redundant prefixes and redundant terms ("Rape", "for Rape", etc.)
+        sub = re.sub(r'^(Other Than Custodial Rape|Rape in Custody)\s*[-\s]*', '', text, flags=re.IGNORECASE).strip()
+        sub = re.sub(r'\b(Rape/Gang Rape|Rape|after Rape|for Rape)\b', '', sub, flags=re.IGNORECASE)
+        sub = re.sub(r'\s+', ' ', sub).strip()
+        
+        # Clean leading prepositions
+        for prep in ["By ", "On ", "of "]:
+            if sub.startswith(prep):
+                sub = sub[len(prep):].strip()
+                
+        if sub.lower() in ["punishment", ""]:
+            sub = "General Offences (Section Penalties)"
+        elif sub == "Gang":
+            sub = "Gang Incidents"
+            
+        return category, sub
+
+    # Apply category mapping
+    categories_subcategories = long_df["raw_metric"].apply(parse_metric)
+    long_df["Offense_Category"] = [c[0] for c in categories_subcategories]
+    long_df["Offense_Subcategory"] = [c[1] for c in categories_subcategories]
+    
+    # Drop raw unparsed string column
+    long_df.drop(columns=["raw_metric"], inplace=True)
+    
+    # Reorder columns
+    ordered_cols = id_cols + ["Offense_Category", "Offense_Subcategory", value_name]
+    long_df = long_df[ordered_cols]
+    
+    # 4. Optimize memory footprint using categorical types and integer downcasting
+    for col in id_cols + ["Offense_Category", "Offense_Subcategory"]:
+        long_df[col] = long_df[col].astype("object")
+        
+    long_df[value_name] = pd.to_numeric(long_df[value_name], downcast="integer")
+    
+    return long_df
+
+
+
+
 # ---------------------------------------
 # GRAPHS PLOTTING
 # ---------------------------------------
