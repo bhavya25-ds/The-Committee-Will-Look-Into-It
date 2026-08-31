@@ -55,6 +55,8 @@ def set_style():
 
 
 
+PALETTE = ["#e05c5c", "#e0955c", "#e0d45c", "#5ce08a", "#5cb8e0"]
+ACCENT  = "#aaaaaa"
 
 # ---------------------------------------
 # DATA INPUT
