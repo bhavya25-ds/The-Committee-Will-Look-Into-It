@@ -1,0 +1,121 @@
+state,district,event_type,sec144_order_count,network_type,nature,date,status
+Delhi,Central District,sec144,28.0,,,,
+Delhi,Dwarka District,sec144,450.0,,,,
+Delhi,East District,sec144,508.0,,,,
+Delhi,New Delhi District,sec144,383.0,,,,
+Delhi,North District,sec144,520.0,,,,
+Delhi,North-East District,sec144,541.0,,,,
+Delhi,North-West District,sec144,342.0,,,,
+Delhi,Outer District,sec144,431.0,,,,
+Delhi,Outer-North District,sec144,394.0,,,,
+Delhi,Rohini District,sec144,409.0,,,,
+Delhi,Shahdara District,sec144,578.0,,,,
+Delhi,South District,sec144,456.0,,,,
+Delhi,South-East District,sec144,243.0,,,,
+Delhi,South-West District,sec144,344.0,,,,
+Delhi,West District,sec144,370.0,,,,
+Delhi,IGI,sec144,6.0,,,,
+Delhi,Metro,sec144,112.0,,,,
+Delhi,PHQ,sec144,2.0,,,,
+Delhi,Special Commissioners of Police,sec144,2.0,,,,
+Delhi,Railway,sec144,5.0,,,,
+Bihar,Muzaffarpur,internet_shutdown,,Mobile,Preventive,2026-07-24,Ended
+Delhi,Central Delhi,internet_shutdown,,Mobile,Preventive,2026-07-24,Ended
+Delhi,Central Delhi,internet_shutdown,,Mobile,Preventive,2026-07-23,Ended
+Delhi,Central Delhi,internet_shutdown,,,Reactive,2026-07-22,Ended
+Delhi,Central Delhi,internet_shutdown,,Mobile,Reactive,2026-07-20,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,,Preventive,2026-07-17,Ended
+Rajasthan,"Karauli, Sawai Madhopur",internet_shutdown,,Mobile,Preventive,2026-07-08,Ended
+Uttarakhand,Chamoli,internet_shutdown,,Both,Preventive,2026-06-21,Ended
+Rajasthan,Jaipur,internet_shutdown,,Mobile,Preventive,2026-06-07,Ended
+Haryana,Faridabad,internet_shutdown,,Mobile,Preventive,2026-05-30,Ended
+Assam,"Chirang, Kokrajhar",internet_shutdown,,Mobile,Reactive,2026-04-17,Ended
+Manipur,"Kakching, Bishnupur, Imphal East, Imphal West",internet_shutdown,,Both,Preventive,2026-04-16,Ended
+Manipur,"Kakching, Imphal West, Imphal East, Thoubal, Bishnupur",internet_shutdown,,Both,Preventive,2026-04-14,Ended
+Jammu And Kashmir,Ramban,internet_shutdown,,Mobile,Preventive,2026-04-13,Ended
+Manipur,"Kakching, Imphal West, Imphal East, Thoubal, Bishnupur",internet_shutdown,,Both,Preventive,2026-04-12,Ended
+Manipur,"Kakching, Imphal East, Imphal West, Thoubal, Bishnupur",internet_shutdown,,Both,Reactive,2026-04-10,Ended
+Manipur,"Bishnupur, Imphal West, Imphal East, Kakching, Thoubal",internet_shutdown,,Both,Reactive,2026-04-07,Ended
+Meghalaya,"North Garo Hills, West Garo Hills, South Garo Hills, South West Garo Hills, East Garo Hills",internet_shutdown,,Mobile,Reactive,2026-03-12,Ended
+Meghalaya,West Garo Hills,internet_shutdown,,Mobile,Reactive,2026-03-10,Ended
+Jammu And Kashmir,Srinagar,internet_shutdown,,Mobile,Preventive,2026-03-01,Ended
+Manipur,"Kangpokpi, Kamjong",internet_shutdown,,,Preventive,2026-02-10,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,,Preventive,2026-02-10,Ended
+Manipur,Ukhrul,internet_shutdown,,Both,Preventive,2026-02-10,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Mobile,Preventive,2026-01-30,Ended
+Assam,"Kokrajhar, Chirang",internet_shutdown,,Mobile,Reactive,2026-01-20,Ended
+Odisha,Sundargarh,internet_shutdown,,,Reactive,2026-01-15,Ended
+Tripura,Unakoti,internet_shutdown,,Mobile,Preventive,2026-01-10,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,Mobile,Preventive,2026-01-06,Ended
+Rajasthan,Jaipur,internet_shutdown,,,Preventive,2025-12-27,Ended
+Rajasthan,Jaipur,internet_shutdown,,,Preventive,2025-12-26,Ended
+Assam,West Karbi Anglong Karbi Anglong,internet_shutdown,,Mobile,Reactive,2025-12-23,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,,Preventive,2025-12-16,Ended
+Odisha,Malkangiri,internet_shutdown,,,Preventive,2025-12-14,Ended
+Odisha,Malkangiri,internet_shutdown,,,Preventive,2025-12-13,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,,Preventive,2025-12-12,Ended
+Odisha,Malkangiri,internet_shutdown,,,Preventive,2025-12-12,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,,Preventive,2025-12-11,Ended
+Odisha,Malkangiri,internet_shutdown,,,Preventive,2025-12-11,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,,Preventive,2025-12-10,Ended
+Odisha,Malkangiri,internet_shutdown,,Both,Preventive,2025-12-10,Ended
+Odisha,Malkangiri,internet_shutdown,,Both,Preventive,2025-12-09,Ended
+Odisha,Malkangiri,internet_shutdown,,Both,Preventive,2025-12-08,Ended
+Rajasthan,Hanumangarh,internet_shutdown,,,Preventive,2025-11-18,Ended
+Tripura,Dhalal,internet_shutdown,,Both,Reactive,2025-10-23,Ended
+Assam,Baksa,internet_shutdown,,Mobile Data,Preventive,2025-10-16,Ended
+Odisha,Cuttack,internet_shutdown,,Both,Reactive,2025-10-05,Ended
+Uttar Pradesh,Bareilly,internet_shutdown,,Both,Preventive,2025-10-02,Ended
+Uttar Pradesh,Bareilly,internet_shutdown,,Both,Reactive,2025-09-27,Ended
+Ladakh,Leh,internet_shutdown,,Both,Reactive,2025-09-26,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Both,Reactive,2025-09-11,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Both,Reactive,2025-09-11,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Both,Reactive,2025-09-10,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Both,Reactive,2025-09-10,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Both,Reactive,2025-09-09,Ended
+Haryana,Bhiwani,internet_shutdown,,Mobile,Preventive,2025-08-21,Ended
+Haryana,"Charkhi Dadri, Bhiwani",internet_shutdown,,Mobile,Reactive,2025-08-20,Ended
+Haryana,-,internet_shutdown,,Mobile,Preventive,2025-07-25,Ended
+Bihar,Jamui,internet_shutdown,,Mobile,Reactive,2025-07-16,Ended
+Haryana,Nuh,internet_shutdown,,Mobile,Preventive,2025-07-14,Ended
+Bihar,Katihar,internet_shutdown,,Mobile,Reactive,2025-07-06,Ended
+Odisha,Bhadrak,internet_shutdown,,,Preventive,2025-06-12,Ended
+Odisha,Bhadrak,internet_shutdown,,,Reactive,2025-06-11,Ended
+Assam,Dhubri,internet_shutdown,,Both,Reactive,2025-06-10,Ended
+Manipur,"Imphal East, Imphal West, Thoubal, Bishnupur, Kakching",internet_shutdown,,Both,Preventive,2025-06-08,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Mobile,Preventive,2025-05-22,Ended
+Jammu And Kashmir,Budgam,internet_shutdown,,Mobile,Preventive,2025-05-17,Ended
+Punjab,Faridkot,internet_shutdown,,Mobile,Reactive,2025-05-08,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Both,Preventive,2025-04-26,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Both,Reactive,2025-04-23,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Both,Preventive,2025-04-16,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Both,Preventive,2025-04-14,Ended
+Jammu And Kashmir,Kishtwar,internet_shutdown,,Both,Preventive,2025-04-13,Ended
+West Bengal,"Birbhum, Murshidabad, Malda",internet_shutdown,,Mobile,Preventive,2025-04-13,Ended
+West Bengal,"Murshidabad, Birbhum, Malda",internet_shutdown,,Mobile,Preventive,2025-04-11,Ended
+West Bengal,"Murshidabad, Hooghly",internet_shutdown,,Mobile,Reactive,2025-04-08,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Mobile,Preventive,2025-04-06,Ended
+Jammu And Kashmir,Doda,internet_shutdown,,Mobile,Preventive,2025-04-05,Ended
+Punjab,"Sangrur, Patiala",internet_shutdown,,Mobile,Reactive,2025-03-19,Ended
+West Bengal,Birbhum,internet_shutdown,,Mobile,Preventive,2025-03-14,Ended
+Jammu And Kashmir,Kathua,internet_shutdown,,Both,Preventive,2025-02-05,Ended
+Jammu And Kashmir,Ganderbal,internet_shutdown,,Mobile,Preventive,2025-01-13,Ended
+Maharashtra,Pune,internet_shutdown,,Mobile,Preventive,2025-01-02,Ended
+Haryana,Ambala,internet_shutdown,,Mobile,Preventive,2024-12-14,Ended
+Haryana,Ambala,internet_shutdown,,Mobile,Preventive,2024-12-06,Ended
+Manipur,"Imphal East, Imphal West, Bishnupur, Thoubal, Kakching, Kangpokpi, Churachandpur, Pherzawl, Jiribam",internet_shutdown,,Mobile,Preventive,2024-12-05,Ended
+Manipur,"Imphal East, Imphal West, Kangpokpi, Kakching, Bishnupur, Thoubal, Churachandpur, Pherzawl, Jiribam",internet_shutdown,,Mobile,Preventive,2024-12-03,Ended
+Manipur,"Imphal East, Imphal West, Kakching, Bishnupur, Thoubal, Churachandpur, Kangpokpi, Pherzawl, Jiribam",internet_shutdown,,Mobile,Preventive,2024-11-24,Ended
+Uttar Pradesh,Sambhal,internet_shutdown,,Mobile,Reactive,2024-11-24,Ended
+Manipur,"Imphal East, Imphal West, Thoubal, Bishnupur, Kakching, Kangpokpi, Churachandpur",internet_shutdown,,Both,Preventive,2024-11-20,Ended
+Manipur,"Imphal West, Imphal East, Thoubal, Bishnupur, Kakching, Kangpokpi, Churachandpur",internet_shutdown,,Mobile,Preventive,2024-11-18,Ended
+West Bengal,Murshidabad,internet_shutdown,,Mobile,Reactive,2024-11-16,Ended
+West Bengal,Murshidabad,internet_shutdown,,Mobile,Reactive,2024-11-16,Ended
+Manipur,"Imphal East, Imphal West, Bishnupur, Thoubal, Kakching, Kangpokpi, Churachandpur",internet_shutdown,,Mobile,Reactive,2024-11-16,Ended
+Rajasthan,Tonk,internet_shutdown,,Mobile,Reactive,2024-11-14,Ended
+Telangana,Vikarabad,internet_shutdown,,Mobile,Preventive,2024-11-12,Ended
+Assam,"Tinsukia, Dhemaji, Dibrugarh, Lakhimpur, Sivasagar, Jorhat, Sonitpur, Golaghat, Udalguri, Chirang, Baksa, Nagaon, Kokrajhar, Darrang, Barpeta, Nalbari, Morigaon, Kamrup, Dhubri, Kamrup Metropolitan, Goalpara, Hasao, Cachar, Karimganj, Hailakandi, Charaideo, Majuli, Biswanath, Hojai, Mankachar, Anglong, Bongaigaon",internet_shutdown,,Mobile,Preventive,2024-10-27,Ended
+Tripura,North Tripura,internet_shutdown,,Mobile,Reactive,2024-10-15,Ended
+Uttar Pradesh,Bahraich,internet_shutdown,,Mobile,Reactive,2024-10-14,Ended
+Tripura,North Tripura,internet_shutdown,,Mobile,Reactive,2024-10-06,Ended
+Odisha,Bhadrak,internet_shutdown,,Mobile,Reactive,2024-09-30,Ended
